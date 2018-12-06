@@ -234,6 +234,8 @@ public class Action {
 		  webtest.click("xpath=//button[@action='new_work']");
         webtest.leaveFrame();
 	  }
+	  //20-23同上
+	  //24.25无法定位元素
 	  //26.验证重命名文件的功能
 	  public void rename(String ceshi) throws IOException 
 	  {
@@ -337,5 +339,85 @@ public class Action {
 		  webtest.click("xpath=//button[@class='btn btn-danger']");
 		  webtest.leaveFrame();
 	  }
+	  //37.验证重命名文件夹的功能
+	  public void newfile5(String mm) throws IOException 
+	  {
+		  webtest.click("id=_M9");
+		  webtest.click("link=下载管理");
+		  webtest.enterFrame("rightMain");
+		  webtest.click("xpath=//a[(@title='huojian')]");
+		  webtest.click("xpath=//input[@id='title']");
+		  webtest.typeAndClear("xpath=//input[@id='title']",mm);
+		  webtest.click("xpath=//button[@class='btn btn-danger']");
+		  webtest.leaveFrame();
+	  }
+	//38.验证删除文件夹的功能
+	  public void deletefile4() throws IOException 
+	  {
+		  webtest.click("id=_M9");
+		  webtest.click("link=下载管理");
+		  webtest.enterFrame("rightMain");
+		  webtest.click("xpath=//a[@did='1']");
+		  webtest.leaveFrame();
+	  }
+	//39.验证查询文件能否为空
+	  public void search4() throws IOException 
+	  {
+		  webtest.click("id=_M9");
+		  webtest.click("link=下载管理");
+		  webtest.enterFrame("rightMain");
+		  webtest.click("link=查询");
+		  webtest.leaveFrame();
+	  }
+	//40.验证查询文件的功能
+	  public void search5(String titlename) throws IOException 
+	  {
+		  webtest.click("id=_M9");
+		  webtest.click("link=下载管理");
+		  webtest.enterFrame("rightMain");
+		  webtest.click("xpath=//input[@name='title']");
+		  webtest.type("xpath=//input[@name='title']",titlename);
+		  webtest.click("link=查询");
+		  webtest.leaveFrame();
+	  }
+	//41.查询文件输入不存在的文件名
+	  public void search6(String titlename) throws IOException 
+	  {
+		  webtest.click("id=_M9");
+		  webtest.click("link=下载管理");
+		  webtest.enterFrame("rightMain");
+		  webtest.click("xpath=//input[@name='title']");
+		  webtest.type("xpath=//input[@name='title']",titlename);
+		  webtest.click("link=查询");
+		  webtest.leaveFrame();
+	  }
+	  //42.验证界面中“移动文件”的功能
+	  public void move() throws IOException 
+	  {
+		  webtest.click("id=_M9");
+		  webtest.click("link=下载管理");
+		  webtest.enterFrame("rightMain");
+		  webtest.click("xpath=//input[@value='6']");
+		  webtest.click("link=更多操作");
+		  webtest.click("link=移动");
+		  webtest.click("xpath=//select[@name='typeid']");
+		  webtest.click("xpath=//option[@value='1']");
+		  webtest.click("xpath=//button[@class='btn btn-danger']");
+		  webtest.leaveFrame();
+	  }
+	  //43.未选中文件而点击“更多操作-移动文件”
+	  public void move2() throws IOException 
+	  {
+		  webtest.click("id=_M9");
+		  webtest.click("link=下载管理");
+		  webtest.enterFrame("rightMain");
+		  webtest.click("link=更多操作");
+		  webtest.click("link=移动");
+		  webtest.click("xpath=//select[@name='typeid']");
+		  webtest.click("xpath=//option[@value='1']");
+		  webtest.click("xpath=//button[@class='btn btn-danger']");
+		  webtest.leaveFrame();
+	  }
+
 
 }

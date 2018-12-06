@@ -190,6 +190,46 @@ public class Front_Test extends BaseTest{
 	@Test(priority=36)
 	public void Newfile4() throws Exception  {
 		Action action =new Action(webtest) ;
-		action.newfile3("huojian2");
+		action.newfile4("huojian2");
+	}
+	@Test(priority=37)
+	public void Newfile5() throws Exception  {
+		Action action =new Action(webtest) ;
+		action.newfile5("huojian3");
+	}
+	@Test(priority=38)
+	public void Deletefile4() throws Exception  {
+		Action action =new Action(webtest) ;
+		action.deletefile4();
+	}
+	@Test(priority=39)
+	public void Search4() throws Exception  {
+		Action action =new Action(webtest) ;
+		action.search4();
+		assertTrue(webtest.ifContains("请输入要查询的文件名称"));
+	}
+	@Test(priority=40)
+	public void Search5() throws Exception  {
+		Action action =new Action(webtest) ;
+		action.search5("1.0 软件测试基础课程回顾");
+		assertTrue(webtest.ifContains("下载"));
+	}
+	@Test(priority=41)
+	public void Search6() throws Exception  {
+		Action action =new Action(webtest) ;
+		action.search6("lalala");
+		assertTrue(webtest.ifContains("下载"));
+	}
+	@Test(priority=42)
+	public void Move() throws Exception  {
+		Action action =new Action(webtest) ;
+		action.move();
+		assertTrue(webtest.ifContains("下载"));
+	}
+	@Test(priority=43)
+	public void Move2() throws Exception  {
+		Action action =new Action(webtest) ;
+		action.move2();
+		assertTrue(webtest.ifContains("下载"));
 	}
 }
