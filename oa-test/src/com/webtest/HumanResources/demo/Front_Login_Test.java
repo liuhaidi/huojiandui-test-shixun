@@ -1,71 +1,79 @@
-package com.webtest.demo;
+package com.edu.pageObjects;
 
 import static org.testng.Assert.assertTrue;
 
+import java.io.IOException;
+
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.webtest.core.BaseTest;
-import com.webtest.core.WebTestListener;
+import com.edu.core.BaseTest;
 
-
-@Listeners(WebTestListener.class)
 public class Front_Login_Test extends BaseTest {
 
 	Login_Action action;
-	@BeforeMethod
-	public void setup() {
+	@Test
+	public void setup() throws IOException {
 		action=new Login_Action(webtest);
-		webtest.open("http://localhost:8032/tscoa/login.php");
 		action.login("admin", "123456");
 		
 	}
 
 	
-//	@Test
-//	public void Time_Test() {
-//	    action.Time();
-//}
-//	@Test
-//	public void ZhouQi_Test() {
-//		action=new Login_Action(webtest);
-//	    action.ZhouQi("2018-12-01","2018-12-05");
-//}
-//	@Test
-//	public void ZhouQi_Test() {
-//		action.ZhouQi();
-//	}
-//	@Test
-//	public void ShanChuOne_Test() {
-//		action.ShanChuOne();
-//		assertTrue(webtest.ifContains("考勤信息清理成功！"));
-//	}
-//	@Test
-//	public void ShanChuMore_Test() {
-//		action.ShanChuMore();
-//		assertTrue(webtest.ifContains("考勤信息清理成功！"));
-//	}
-//	@Test
-//	public void DaoChu_Test() {
-//		action.DaoChu();
-//		assertTrue(webtest.ifContains("考勤信息下载成功！"));
-//	}
-//	@Test
-//	public void BianHaoChaXun_Test() {
-//		action.BianHaoChaXun("20181127085529");
-//		
-//	}
-//	@Test
-//	public void LeiXingChaXun_Test() {
-//		action.LeiXingChaXun("其它");
-//		
-//	}
-//	@Test
-//	public void FaBu_Test() {
-//		action.FaBu("2018-11-21", "2018-11-30", "5", "2018-12-01", "1", "2018-12-30");
-//		assertTrue(webtest.ifContains("单位员工不能为空"));
-//	}
+	@Test
+	public void Time_Test() throws InterruptedException, IOException {
+		action=new Login_Action(webtest);
+		action.login("admin", "123456");
+	    action.Time();
+}
+	@Test
+	public void ZhouQi_Test() throws IOException {		
+		action=new Login_Action(webtest);
+		action.login("admin", "123456");
+	    action.ZhouQi("2018-12-01","2018-12-05");
+}
+	@Test
+	public void ShanChuOne_Test() throws InterruptedException, IOException {
+		action=new Login_Action(webtest);
+		action.login("admin", "123456");
+		action.ShanChuOne();
+		assertTrue(webtest.ifContains("考勤信息清理成功！"));
+	}
+	@Test
+	public void ShanChuMore_Test() throws InterruptedException, IOException {
+		action=new Login_Action(webtest);
+		action.login("admin", "123456");
+		action.ShanChuMore();
+		assertTrue(webtest.ifContains("考勤信息清理成功！"));
+	}
+	@Test
+	public void DaoChu_Test() throws InterruptedException, IOException {
+		action=new Login_Action(webtest);
+		action.login("admin", "123456");
+		action.DaoChu();
+		assertTrue(webtest.ifContains("考勤信息下载成功！"));
+	}
+	@Test
+	public void BianHaoChaXun_Test() throws IOException, InterruptedException {
+		action=new Login_Action(webtest);
+		action.login("admin", "123456");
+		action.BianHaoChaXun("20181127085529");
+	}
+		
+	@Test
+	public void LeiXingChaXun_Test() throws InterruptedException, IOException {
+		action=new Login_Action(webtest);
+		action.login("admin", "123456");
+		action.LeiXingChaXun("其它");
+		
+	}
+	@Test
+	public void FaBu_Test() throws InterruptedException, IOException {
+		action=new Login_Action(webtest);
+		action.login("admin", "123456");
+		action.FaBu("2018-11-21", "2018-11-30", "5", "2018-12-01", "1", "2018-12-30");
+		assertTrue(webtest.ifContains("单位员工不能为空"));
+	}
 	@Test
 	public void HengChaiDan_Test() {
 		action.HengChaiDan();
@@ -88,25 +96,25 @@ public class Front_Login_Test extends BaseTest {
 	}
 	
 	@Test
-	public void FaBuJiangCheng_Test() {
+	public void FaBuJiangCheng_Test() throws InterruptedException {
 		action.FaBuJiangCheng("2018-11-01", "惩罚", "1", "迟到","2018", "12");
 		assertTrue(webtest.ifContains("单位员工不能为空"));
 		
 	}
 	@Test
-	public void CaiDanTongBu_Test() {
+	public void CaiDanTongBu_Test() throws InterruptedException {
 		action.CaiDanTongBu();
 		assertTrue(webtest.ifContains("横纵同步"));
 		
 	}
 	@Test
-	public void XinJianHeTong_Test() {
+	public void XinJianHeTong_Test() throws InterruptedException {
 		action.XinJianHeTong("保密合同");
 		assertTrue(webtest.ifContains("已存在该合同类型"));
 		
 	}
 	@Test
-	public void XueLiShanChu() {
+	public void XueLiShanChu() throws InterruptedException {
 		action.XueLiShanChu();
 		assertTrue(webtest.ifContains("成功删除"));
 		

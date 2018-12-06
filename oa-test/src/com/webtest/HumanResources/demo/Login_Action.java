@@ -1,13 +1,18 @@
-package com.webtest.demo;
-import com.webtest.core.WebDriverEngine;
+package com.edu.pageObjects;
+
+import java.io.IOException;
+
+import com.edu.core.WebDriverEngine;
+import com.webtest.utils.ReadProperties;
 
 public class Login_Action {
-	private WebDriverEngine webtest;
-	public Login_Action(WebDriverEngine webtest) {
+	WebDriverEngine webtest=null;
+	public Login_Action (WebDriverEngine webtest) {
 		this.webtest=webtest;
 	}
 //登录	
-	public void login(String email,String password) {
+	public void login(String email,String password) throws IOException {
+		webtest.open(ReadProperties.getPropertyValue("baseUrl"));
 		webtest.type("name=username", email);
 		webtest.type("name=password", password);
 		webtest.click("link=登录");
@@ -17,10 +22,10 @@ public class Login_Action {
 		webtest.click("link=人力资源");
 	}
 //考勤管理
-	public void Time() {
+	public void Time() throws InterruptedException {
 		webtest.click("id=_M11");
 		webtest.click("link=考勤管理");
-		webtest.pause(3000);
+		Thread.sleep(3000);
 		webtest.enterFrame("rightMain");
 		webtest.click("link=今天");
 		webtest.leaveFrame();
@@ -30,34 +35,36 @@ public class Login_Action {
 		webtest.click("link=考勤管理");
 		webtest.enterFrame("rightMain");
 		webtest.click("xpath=//input[@name='vstartdate']");
-		webtest.typeAndClear("xpath=//input[@name='vstartdate']",value);
-		webtest.typeAndClear("xpath=//input[@name='venddate']",value1);
-		webtest.click("link=查询");
+		webtest.type("xpath=//input[@name='vstartdate']",value);
+		webtest.click("xpath=//input[@name='venddate']");
+		webtest.type("xpath=//input[@name='venddate']",value1);
+		webtest.click("class=SmallButton");
 		}
-	public void ShanChuOne() {
+	public void ShanChuOne() throws InterruptedException {
 		webtest.click("id=_M11");
 		webtest.click("link=考勤管理");
-		webtest.pause(3000);
+		Thread.sleep(3000);
 		webtest.enterFrame("rightMain");
 		webtest.click("xpath=//input[@value='8']");
 		webtest.click("link=清理数据");
 	}
-	public void ShanChuMore() {
+	public void ShanChuMore() throws InterruptedException {
 		webtest.click("id=_M11");
 		webtest.click("link=考勤管理");
-		webtest.pause(3000);
+		Thread.sleep(3000);
 		webtest.enterFrame("rightMain");
 		webtest.click("xpath=//input[@value='8']");
 		webtest.click("xpath=//input[@value='3']");
 		webtest.click("link=清理数据");
 	}
-	public void DaoChu() {
+	public void DaoChu() throws InterruptedException {
 		webtest.click("id=_M11");
 		webtest.click("link=考勤管理");
-		webtest.pause(3000);
+		Thread.sleep(3000);
 		webtest.enterFrame("rightMain");
 		webtest.click("xpath=//input[@name='chkall']");
 		webtest.click("id=J-download");
+		
 	}
 	
 	
@@ -67,36 +74,37 @@ public class Login_Action {
 	
 	
 //人事合同
-	public void BianHaoChaXun(String value) {
+	public void BianHaoChaXun(String value) throws InterruptedException {
 		resource();
 		webtest.click("link=人事合同");
-		webtest.pause(3000);
+		Thread.sleep(3000);
 		webtest.enterFrame("rightMain");
 		webtest.type("xpath=//input[@name='number']",value);	
-		webtest.click("link=查询");
+		webtest.click("id=do_search");
 		
 	}
-	public void LeiXingChaXun(String value) {
+	public void LeiXingChaXun(String value) throws InterruptedException {
 		resource();
 		webtest.click("link=人事合同");
-		webtest.pause(3000);
+		Thread.sleep(3000);
 		webtest.enterFrame("rightMain");
 		webtest.selectByVisibleText("name=type", value);
 		webtest.click("link=查询");
 		
 	}
-	public void FaBu(String value,String value1,String value2,String value3,String value4,String value5) {
+	public void FaBu(String value,String value1,String value2,String value3,String value4,String value5) throws InterruptedException {
 		resource();
 		webtest.click("link=人事合同");
-		webtest.pause(3000);
+		Thread.sleep(3000);
 		webtest.enterFrame("rightMain");
-		webtest.click("link=发布信息");
-		webtest.selectByVisibleText("name=signdate", value);
-		webtest.selectByVisibleText("name=testdate", value1);
-		webtest.selectByVisibleText("name=testday", value2);
-		webtest.selectByVisibleText("name=testenddate", value3);
-		webtest.selectByVisibleText("name=signnum", value4);
-		webtest.selectByVisibleText("name=signenddate", value5);
+		webtest.click("xpath=/html/body/div[2]/div/div[1]/button[1]");
+		webtest.type("name=signdate", value);
+		webtest.type("name=testdate", value1);
+		webtest.type("name=testday", value2);
+		webtest.type("name=testenddate", value3);
+		webtest.type("name=signnum", value4);
+		webtest.type("name=signenddate", value5);
+		webtest.click("class=BigButtonBHover");
 		
 		
 		
@@ -137,10 +145,10 @@ public class Login_Action {
 			webtest.click("link=查询");
 		}
 		
-		public void FaBuJiangCheng(String value,String value1,String value2,String value3,String value4,String value5) {
+		public void FaBuJiangCheng(String value,String value1,String value2,String value3,String value4,String value5) throws InterruptedException {
 			resource();
 			webtest.click("link=奖惩记录");
-			webtest.pause(3000);
+			Thread.sleep(3000);
 			webtest.enterFrame("rightMain");
 			webtest.click("link=发布信息");
 			webtest.selectByVisibleText("name=rewardsdate", value);
@@ -152,27 +160,27 @@ public class Login_Action {
 			webtest.click("link=保存");
 		}
 //基础类别测试
-		public void CaiDanTongBu() {
+		public void CaiDanTongBu() throws InterruptedException {
 					resource();
 					webtest.click("link=招聘渠道");
-					webtest.pause(3000);
+					Thread.sleep(3000);
 	
 		}
-		public void XinJianHeTong(String value) {
+		public void XinJianHeTong(String value) throws InterruptedException {
 			resource();
 			webtest.click("link=人事合同类型");
 			webtest.enterFrame("rightMain");
 			webtest.click("link=增加新人事合同类型");
-			webtest.pause(3000);
+			Thread.sleep(3000);
 			webtest.selectByVisibleText("name=newname[]", value);
 			webtest.click("link=保存");
 }
-		public void XueLiShanChu() {
+		public void XueLiShanChu() throws InterruptedException {
 			resource();
 			webtest.click("link=学历");
 			webtest.enterFrame("rightMain");
 			webtest.click("link=删除");
-			webtest.pause(3000);
+			Thread.sleep(3000);
 		
 }
 		
