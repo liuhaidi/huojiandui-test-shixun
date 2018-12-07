@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SystemSetting"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="8.008">
+  <properties />
+  
+  
+            <testcase name="add_menu_test" time="8.008" classname="com.webtest.SystemSetting.demo.Menu_test" />
+      
+</testsuite>

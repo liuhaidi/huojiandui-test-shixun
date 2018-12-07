@@ -1,0 +1,101 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="s2">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+        <listener class-name="com.webtest.core.WebTestListener"></listener>
+    </listeners>
+	
+	<test name="PerOffice1">
+		<classes>
+            <class name="com.webtest.PerOffice1.demo.Test1"></class>
+            <class name="com.webtest.PerOffice1.demo.Test2"></class>
+            <class name="com.webtest.PerOffice1.demo.Test3"></class>
+            <class name="com.webtest.PerOffice1.demo.Test4"></class>
+            <class name="com.webtest.PerOffice1.demo.Test5"></class>
+        <class name="com.webtest.PerOffice1.demo.Test6"></class>
+            <class name="com.webtest.PerOffice1.demo.Test7"></class>
+            <class name="com.webtest.PerOffice1.demo.Test8"></class>
+            <class name="com.webtest.PerOffice1.demo.Test9"></class>
+            <class name="com.webtest.PerOffice1.demo.Test10"></class>
+            <class name="com.webtest.PerOffice1.demo.Test11"></class>
+            <class name="com.webtest.PerOffice1.demo.Test12"></class>
+            <class name="com.webtest.PerOffice1.demo.Test13"></class>
+            <class name="com.webtest.PerOffice1.demo.Test14"></class>
+            <class name="com.webtest.PerOffice1.demo.Test15"></class>
+            <class name="com.webtest.PerOffice1.demo.Test16"></class>
+            <class name="com.webtest.PerOffice1.demo.Test17"></class>
+            <class name="com.webtest.PerOffice1.demo.Test18"></class>
+            <class name="com.webtest.PerOffice1.demo.Test19"></class>
+            <class name="com.webtest.PerOffice1.demo.Test20"></class>
+            <class name="com.webtest.PerOffice1.demo.Test21"></class>
+            <class name="com.webtest.PerOffice1.demo.Test22"></class>
+            <class name="com.webtest.PerOffice1.demo.Test23"></class>
+            <class name="com.webtest.PerOffice1.demo.Test24"></class>
+            <class name="com.webtest.PerOffice1.demo.Test25"></class>
+            <class name="com.webtest.PerOffice1.demo.Test26"></class>
+            <class name="com.webtest.PerOffice1.demo.Test27"></class>
+            <class name="com.webtest.PerOffice1.demo.Test28"></class>
+            <class name="com.webtest.PerOffice1.demo.Test29"></class>
+            <class name="com.webtest.PerOffice1.demo.Test30"></class>
+            <class name="com.webtest.PerOffice1.demo.Test31"></class>
+            <class name="com.webtest.PerOffice1.demo.Test32"></class>
+            <class name="com.webtest.PerOffice1.demo.Test33"></class>
+            <class name="com.webtest.PerOffice1.demo.Test34"></class>
+            <class name="com.webtest.PerOffice1.demo.Test35"></class>
+            <class name="com.webtest.PerOffice1.demo.Test36"></class>
+            <class name="com.webtest.PerOffice1.demo.Test37"></class>
+        </classes>
+	</test>
+	<test name="PerOffice2">
+	    <classes>
+	        <class name="com.webtest.PerOffice2.demo.AddReadTime_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.Comment_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.DelPerLog_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.FindInform_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.FindTel_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.MassMessage_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.NewLog_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.NewTel_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.PerInform_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.PerPwd_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.ReadShortMsg_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.TelMessage_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.WordLimit_Test"></class>
+	    </classes>
+	</test>
+	<test name="HumanResources">
+	    <classes>
+	        <class name="com.webtest.HumanResources.demo.Front_Login_Test"></class>
+	    </classes>
+	</test>
+	<test name="Knowledeg">
+	    <classes>
+	        <class name="com.webtest.Knowledge.demo.Front_Test"></class>
+	    </classes>
+	</test>
+	<test name="office">
+	    <classes>
+	        <class name="com.webtest.office.demo.AddMeeting_Test"></class>
+	        <class name="com.webtest.office.demo.DeleteTest"></class>
+	        <class name="com.webtest.office.demo.SearchTest"></class>
+	        <class name="com.webtest.office.demo.VoteTest1"></class>
+	        <class name="com.webtest.office.demo.VoteTest2"></class>
+	        <class name="com.webtest.office.demo.VoteTest3"></class>
+	    </classes>
+	</test>
+	<test name="SystemSetting">
+	    <classes>
+	        <class name="com.webtest.SystemSetting.demo.commange_test"></class>
+	        <class name="com.webtest.SystemSetting.demo.Datacopy_test"></class>
+	        <class name="com.webtest.SystemSetting.demo.Menu_test"></class>
+	        <class name="com.webtest.SystemSetting.demo.product_test"></class>
+	        <class name="com.webtest.SystemSetting.demo.QuanXianSet_test"></class>
+	        <class name="com.webtest.SystemSetting.demo.SetMessage_test"></class>
+	        <class name="com.webtest.SystemSetting.demo.Workposition_test"></class>
+	        <class name="com.webtest.SystemSetting.demo.Zhanghu_Test"></class>
+	    </classes>
+	</test>
+
+</suite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="office"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="27.202">
+  <properties />
+  
+  
+            <testcase name="Vote3" time="8.871" classname="com.webtest.office.demo.VoteTest2" />
+                <testcase name="Vote1" time="9.041" classname="com.webtest.office.demo.VoteTest2" />
+                <testcase name="Vote2" time="9.290" classname="com.webtest.office.demo.VoteTest2" />
+      
+</testsuite>
