@@ -12,46 +12,57 @@
 <body>
 <h1>PerOffice2</h1>
 <p>
-  Test duration: 391.628s
+  Test duration: 37.067s
 </p>
 
-
-
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">com.webtest.PerOffice2.demo.MassMessage_Test</td>
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">com.webtest.PerOffice2.demo.Comment_Test</td>
       </tr>
             
 <tr>
   <td class="method">
-                  testMassMsg
+                  doBeforeSuite
       </td>
   <td class="duration">
-    20.569s
+    7.478s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded<br/>
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;<br/>
+System info: host: &apos;LENOVO-PC&apos;, ip: &apos;169.254.133.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;<br/>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
+Capabilities [{moz:profile=C:\Users\123456\AppData\Local\Temp\rust_mozprofile.XGl4NVakYgaA, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=true, browserVersion=62.0, platformVersion=10.0, moz:processID=8452, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=true}]<br/>
+Session ID: 57133344-a32b-49c7-8d2f-423cce4106cb</b></a><br />
     <div class="stackTrace" id="exception-0">
-              org.testng.Assert.fail(Assert.java:96)<br />
-              org.testng.Assert.failNotEquals(Assert.java:776)<br />
-              org.testng.Assert.assertTrue(Assert.java:44)<br />
-              org.testng.Assert.assertTrue(Assert.java:54)<br />
-              com.webtest.PerOffice2.demo.MassMessage_Test.testMassMsg(MassMessage_Test.java:20)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
-              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)<br />
+              org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:877)<br />
+              com.webtest.core.BaseTest.doBeforeSuite(BaseTest.java:73)<br />
+              jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.base/java.lang.reflect.Method.invoke(Unknown Source)<br />
               org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:580)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)<br />
+              org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)<br />
               org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
               org.testng.TestRunner.run(TestRunner.java:505)<br />
               org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
@@ -70,427 +81,329 @@
                 </div>
       </td>
 </tr>
-          <tr>
-        <td colspan="3" class="group">com.webtest.PerOffice2.demo.PerInform_Test</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  test2
-      </td>
-  <td class="duration">
-    8.841s
-  </td>
-  <td class="result">
-        
     
-        
-
-        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br />
-    <div class="stackTrace" id="exception-1">
-              org.testng.Assert.fail(Assert.java:96)<br />
-              org.testng.Assert.failNotEquals(Assert.java:776)<br />
-              org.testng.Assert.assertTrue(Assert.java:44)<br />
-              org.testng.Assert.assertTrue(Assert.java:54)<br />
-              com.webtest.PerOffice2.demo.PerInform_Test.test2(PerInform_Test.java:27)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
-              java.lang.reflect.Method.invoke(Unknown Source)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:580)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-              org.testng.TestNG.run(TestNG.java:1017)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                </div>
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.webtest.PerOffice2.demo.PerPwd_Test</td>
-      </tr>
-            
+          <tr><td colspan="3">&nbsp;</td></tr>
+      <tr><td colspan="3" class="header skippedConfig">Skipped Configuration</td></tr>
+                    <tr>
+          <td colspan="3" class="group">com.webtest.PerOffice2.demo.Comment_Test</td>
+        </tr>
+                
 <tr>
   <td class="method">
-                  test_failed1
+                  doAfterMethod
       </td>
   <td class="duration">
-    11.224s
+    0.000s
   </td>
   <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br />
-    <div class="stackTrace" id="exception-2">
-              org.testng.Assert.fail(Assert.java:96)<br />
-              org.testng.Assert.failNotEquals(Assert.java:776)<br />
-              org.testng.Assert.assertTrue(Assert.java:44)<br />
-              org.testng.Assert.assertTrue(Assert.java:54)<br />
-              com.webtest.PerOffice2.demo.PerPwd_Test.test_failed1(PerPwd_Test.java:18)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
-              java.lang.reflect.Method.invoke(Unknown Source)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:580)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-              org.testng.TestNG.run(TestNG.java:1017)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  test_failed3
-      </td>
-  <td class="duration">
-    3.039s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id right<br/>
-Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;<br/>
-System info: host: &apos;LIU&apos;, ip: &apos;169.254.28.25&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_51&apos;<br/>
-Driver info: driver.version: unknown</b></a><br />
-    <div class="stackTrace" id="exception-3">
-              org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:925)<br />
-              com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:68)<br />
-              com.webtest.PerOffice2.demo.PageAction.perpwd(PageAction.java:169)<br />
-              com.webtest.PerOffice2.demo.PerPwd_Test.test_failed3(PerPwd_Test.java:33)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
-              java.lang.reflect.Method.invoke(Unknown Source)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:580)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-              org.testng.TestNG.run(TestNG.java:1017)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  test_failed4
-      </td>
-  <td class="duration">
-    3.055s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id right<br/>
-Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;<br/>
-System info: host: &apos;LIU&apos;, ip: &apos;169.254.28.25&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_51&apos;<br/>
-Driver info: driver.version: unknown</b></a><br />
-    <div class="stackTrace" id="exception-4">
-              org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:925)<br />
-              com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:68)<br />
-              com.webtest.PerOffice2.demo.PageAction.perpwd(PageAction.java:169)<br />
-              com.webtest.PerOffice2.demo.PerPwd_Test.test_failed4(PerPwd_Test.java:41)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
-              java.lang.reflect.Method.invoke(Unknown Source)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:580)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-              org.testng.TestNG.run(TestNG.java:1017)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  test_failed5
-      </td>
-  <td class="duration">
-    3.044s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-5', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id right<br/>
-Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;<br/>
-System info: host: &apos;LIU&apos;, ip: &apos;169.254.28.25&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_51&apos;<br/>
-Driver info: driver.version: unknown</b></a><br />
-    <div class="stackTrace" id="exception-5">
-              org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:925)<br />
-              com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:68)<br />
-              com.webtest.PerOffice2.demo.PageAction.perpwd(PageAction.java:169)<br />
-              com.webtest.PerOffice2.demo.PerPwd_Test.test_failed5(PerPwd_Test.java:49)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
-              java.lang.reflect.Method.invoke(Unknown Source)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:580)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-              org.testng.TestNG.run(TestNG.java:1017)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                </div>
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.webtest.PerOffice2.demo.TelMessage_Test</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  testdelfailed
-      </td>
-  <td class="duration">
-    11.029s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-6', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br />
-    <div class="stackTrace" id="exception-6">
-              org.testng.Assert.fail(Assert.java:96)<br />
-              org.testng.Assert.failNotEquals(Assert.java:776)<br />
-              org.testng.Assert.assertTrue(Assert.java:44)<br />
-              org.testng.Assert.assertTrue(Assert.java:54)<br />
-              com.webtest.PerOffice2.demo.TelMessage_Test.testdelfailed(TelMessage_Test.java:19)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
-              java.lang.reflect.Method.invoke(Unknown Source)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:580)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-              org.testng.TestNG.run(TestNG.java:1017)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                </div>
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.webtest.PerOffice2.demo.WordLimit_Test</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  testWordLimit1
-      </td>
-  <td class="duration">
-    18.539s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-7', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [false] but found [true]</b></a><br />
-    <div class="stackTrace" id="exception-7">
-              org.testng.Assert.fail(Assert.java:96)<br />
-              org.testng.Assert.failNotEquals(Assert.java:776)<br />
-              org.testng.Assert.assertFalse(Assert.java:65)<br />
-              org.testng.Assert.assertFalse(Assert.java:75)<br />
-              com.webtest.PerOffice2.demo.WordLimit_Test.testWordLimit1(WordLimit_Test.java:21)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
-              java.lang.reflect.Method.invoke(Unknown Source)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:580)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-              org.testng.TestNG.run(TestNG.java:1017)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  testWordLimit2
-      </td>
-  <td class="duration">
-    17.066s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-8', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br />
-    <div class="stackTrace" id="exception-8">
-              org.testng.Assert.fail(Assert.java:96)<br />
-              org.testng.Assert.failNotEquals(Assert.java:776)<br />
-              org.testng.Assert.assertTrue(Assert.java:44)<br />
-              org.testng.Assert.assertTrue(Assert.java:54)<br />
-              com.webtest.PerOffice2.demo.WordLimit_Test.testWordLimit2(WordLimit_Test.java:31)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
-              java.lang.reflect.Method.invoke(Unknown Source)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:580)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-              org.testng.TestNG.run(TestNG.java:1017)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                </div>
-      </td>
-</tr>
-      </table>
-
-
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">com.webtest.PerOffice2.demo.AddReadTime_Test</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  testReadTime
-      </td>
-  <td class="duration">
-    13.341s
-  </td>
-  <td class="result">
-        
+                               
     
         
 
       </td>
 </tr>
+              <tr>
+          <td colspan="3" class="group">com.webtest.PerOffice2.demo.DelPerLog_Test</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  doAfterMethod
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  doBeforeSuite
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+              <tr>
+          <td colspan="3" class="group">com.webtest.PerOffice2.demo.FindInform_Test</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  doBeforeSuite
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+              <tr>
+          <td colspan="3" class="group">com.webtest.PerOffice2.demo.FindTel_Test</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  doBeforeSuite
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+              <tr>
+          <td colspan="3" class="group">com.webtest.PerOffice2.demo.MassMessage_Test</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  doAfterMethod
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  doBeforeSuite
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+              <tr>
+          <td colspan="3" class="group">com.webtest.PerOffice2.demo.NewLog_Test</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  doAfterMethod
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  doBeforeSuite
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+              <tr>
+          <td colspan="3" class="group">com.webtest.PerOffice2.demo.NewTel_Test</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  doBeforeSuite
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+              <tr>
+          <td colspan="3" class="group">com.webtest.PerOffice2.demo.PerInform_Test</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  doAfterMethod
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  doBeforeSuite
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+              <tr>
+          <td colspan="3" class="group">com.webtest.PerOffice2.demo.PerPwd_Test</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  doAfterMethod
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  doBeforeSuite
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+              <tr>
+          <td colspan="3" class="group">com.webtest.PerOffice2.demo.ReadShortMsg_Test</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  doAfterMethod
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  doBeforeSuite
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+              <tr>
+          <td colspan="3" class="group">com.webtest.PerOffice2.demo.TelMessage_Test</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  doBeforeSuite
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+              <tr>
+          <td colspan="3" class="group">com.webtest.PerOffice2.demo.WordLimit_Test</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  doAfterMethod
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  doBeforeSuite
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+            </table>
+
+
+
+  <table class="resultsTable" width="100%">
+    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
           <tr>
         <td colspan="3" class="group">com.webtest.PerOffice2.demo.Comment_Test</td>
       </tr>
@@ -500,10 +413,10 @@ Driver info: driver.version: unknown</b></a><br />
                   testComment
       </td>
   <td class="duration">
-    16.475s
+    0.000s
   </td>
   <td class="result">
-        
+                               
     
         
 
@@ -518,10 +431,10 @@ Driver info: driver.version: unknown</b></a><br />
                   testDelPerLog
       </td>
   <td class="duration">
-    12.270s
+    0.000s
   </td>
   <td class="result">
-        
+                               
     
         
 
@@ -536,10 +449,10 @@ Driver info: driver.version: unknown</b></a><br />
                   test_findbyright
       </td>
   <td class="duration">
-    13.632s
+    0.000s
   </td>
   <td class="result">
-        
+                               
     
         
 
@@ -554,10 +467,28 @@ Driver info: driver.version: unknown</b></a><br />
                   test_findbykey
       </td>
   <td class="duration">
-    16.171s
+    0.000s
   </td>
   <td class="result">
+                               
+    
         
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.webtest.PerOffice2.demo.MassMessage_Test</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  testMassMsg
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
     
         
 
@@ -572,10 +503,10 @@ Driver info: driver.version: unknown</b></a><br />
                   testNewLog
       </td>
   <td class="duration">
-    13.465s
+    0.000s
   </td>
   <td class="result">
-        
+                               
     
         
 
@@ -590,10 +521,10 @@ Driver info: driver.version: unknown</b></a><br />
                   test_noinfo
       </td>
   <td class="duration">
-    21.521s
+    0.000s
   </td>
   <td class="result">
-        
+                               
     
         
 
@@ -608,10 +539,24 @@ Driver info: driver.version: unknown</b></a><br />
                   test1
       </td>
   <td class="duration">
-    10.163s
+    0.000s
   </td>
   <td class="result">
+                               
+    
         
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  test2
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
     
         
 
@@ -622,10 +567,10 @@ Driver info: driver.version: unknown</b></a><br />
                   test3
       </td>
   <td class="duration">
-    13.759s
+    0.000s
   </td>
   <td class="result">
-        
+                               
     
         
 
@@ -636,10 +581,10 @@ Driver info: driver.version: unknown</b></a><br />
                   test4
       </td>
   <td class="duration">
-    13.795s
+    0.000s
   </td>
   <td class="result">
-        
+                               
     
         
 
@@ -651,13 +596,69 @@ Driver info: driver.version: unknown</b></a><br />
             
 <tr>
   <td class="method">
+                  test_failed1
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
                   test_failed2
       </td>
   <td class="duration">
-    9.866s
+    0.000s
   </td>
   <td class="result">
+                               
+    
         
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  test_failed3
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  test_failed4
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  test_failed5
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
     
         
 
@@ -672,7 +673,79 @@ Driver info: driver.version: unknown</b></a><br />
                   testReadShortMsg
       </td>
   <td class="duration">
-    12.265s
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.webtest.PerOffice2.demo.TelMessage_Test</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  testdelfailed
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.webtest.PerOffice2.demo.WordLimit_Test</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  testWordLimit1
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  testWordLimit2
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+      </table>
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.webtest.PerOffice2.demo.AddReadTime_Test</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  testReadTime
+      </td>
+  <td class="duration">
+    16.515s
   </td>
   <td class="result">
         

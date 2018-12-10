@@ -1,0 +1,10 @@
+[ERROR] 2018-12-10 15:39:01,808 com.webtest.utils.Log - com.webtest.PerOffice2.demo.MassMessage_Test@76494737-testMassMsg运行失败，需要截屏
+[ERROR] 2018-12-10 15:40:53,813 com.webtest.utils.Log - com.webtest.PerOffice2.demo.PerInform_Test@17fc391b-test2运行失败，需要截屏
+[ERROR] 2018-12-10 15:41:47,509 com.webtest.utils.Log - com.webtest.PerOffice2.demo.PerPwd_Test@2b30a42c-test_failed1运行失败，需要截屏
+[ERROR] 2018-12-10 15:41:47,627 com.webtest.utils.Log - com.webtest.PerOffice2.demo.PerPwd_Test@2b30a42c-test_failed2运行失败，需要截屏
+[ERROR] 2018-12-10 15:41:47,752 com.webtest.utils.Log - com.webtest.PerOffice2.demo.PerPwd_Test@2b30a42c-test_failed3运行失败，需要截屏
+[ERROR] 2018-12-10 15:41:47,877 com.webtest.utils.Log - com.webtest.PerOffice2.demo.PerPwd_Test@2b30a42c-test_failed4运行失败，需要截屏
+[ERROR] 2018-12-10 15:41:48,002 com.webtest.utils.Log - com.webtest.PerOffice2.demo.PerPwd_Test@2b30a42c-test_failed5运行失败，需要截屏
+[ERROR] 2018-12-10 15:42:47,934 com.webtest.utils.Log - com.webtest.PerOffice2.demo.TelMessage_Test@359df09a-testdelfailed运行失败，需要截屏
+[ERROR] 2018-12-10 15:43:22,828 com.webtest.utils.Log - com.webtest.PerOffice2.demo.WordLimit_Test@43df23d3-testWordLimit1运行失败，需要截屏
+[ERROR] 2018-12-10 15:43:41,214 com.webtest.utils.Log - com.webtest.PerOffice2.demo.WordLimit_Test@43df23d3-testWordLimit2运行失败，需要截屏

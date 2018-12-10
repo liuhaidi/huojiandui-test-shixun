@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="16.171">
+           time="17.781">
   <properties />
   
   
-            <testcase name="test_findbykey" time="16.171" classname="com.webtest.PerOffice2.demo.FindTel_Test" />
+            <testcase name="test_findbykey" time="17.781" classname="com.webtest.PerOffice2.demo.FindTel_Test" />
       
 </testsuite>

@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="11.029">
+           time="12.102">
   <properties />
-            <testcase name="testdelfailed" time="11.029" classname="com.webtest.PerOffice2.demo.TelMessage_Test">
+            <testcase name="testdelfailed" time="12.102" classname="com.webtest.PerOffice2.demo.TelMessage_Test">
                 <failure type="java.lang.AssertionError"
                   message="expected [true] but found [false]"
               >
@@ -16,10 +16,10 @@
   org.testng.Assert.assertTrue(Assert.java:44)
   org.testng.Assert.assertTrue(Assert.java:54)
   com.webtest.PerOffice2.demo.TelMessage_Test.testdelfailed(TelMessage_Test.java:19)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.base/java.lang.reflect.Method.invoke(Unknown Source)
   org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
   org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
   org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)

@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="13.023">
+           time="14.167">
   <properties />
   
   
-            <testcase name="jihua2" time="13.023" classname="com.webtest.PerOffice1.demo.Test9" />
+            <testcase name="jihua2" time="14.167" classname="com.webtest.PerOffice1.demo.Test9" />
       
 </testsuite>

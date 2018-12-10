@@ -164,13 +164,16 @@ public class PageAction {
 	    webtest.click("link=删除数据");
 	}
 //	个人设置——密码修改
-	public void perpwd(String oldpwd,String newpwd1,String newpwd2) {
+	public void perpwd() {
 		webtest.click("link=密码修改");
 		webtest.enterFrame("right");
+	}
+	public void setpwd(String oldpwd,String newpwd1,String newpwd2) {
 		webtest.typeAndClear("name=oldpassword", oldpwd);
 		webtest.typeAndClear("name=password", newpwd1);
 		webtest.typeAndClear("name=ppassword", newpwd2);
 		webtest.click("class=BigButtonBHover");
+		
 	}
 //	个人设置——个人信息
 	public void perinform(String phone,String content,String address) {

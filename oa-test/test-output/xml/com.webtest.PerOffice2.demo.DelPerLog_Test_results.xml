@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="12.270">
+           time="13.449">
   <properties />
   
   
-            <testcase name="testDelPerLog" time="12.270" classname="com.webtest.PerOffice2.demo.DelPerLog_Test" />
+            <testcase name="testDelPerLog" time="13.449" classname="com.webtest.PerOffice2.demo.DelPerLog_Test" />
       
 </testsuite>
