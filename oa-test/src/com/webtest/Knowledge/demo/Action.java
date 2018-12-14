@@ -1,4 +1,4 @@
-package com.webtest.Knowledge.demo;
+package com.webtest.demo;
 
 import java.io.IOException;
 
@@ -19,14 +19,14 @@ public class Action {
 		  webtest.click("class=loginBtn");
 
 	  }
-      //1.进入“知识交流”板块
+	  //1.进入“知识交流”板块
 	  public void knowledge() throws IOException 
 	  {
 		  webtest.click("id=_M9");
 		    
 	  }
 	  //2.查看“知识交流”的各个模块
-	  public void others() throws IOException 
+	  public void others() throws IOException, InterruptedException 
 	  {
 		  webtest.click("link=知识管理");
 		  webtest.click("link=_MP151");
@@ -48,6 +48,7 @@ public class Action {
 		  webtest.click("class=ke-iframe");
 	      webtest.type("class=ke-iframe",content);
 		  webtest.click("xpath=//input[@value='保存']");
+		  webtest.alertAccept();
 		  webtest.leaveFrame();
 	  }
 	  //4.发布信息时未填写内容
@@ -59,6 +60,7 @@ public class Action {
 		  webtest.click("xpath=//button[@action='new_work']");
 		  webtest.typeAndClear("xpath=//input[@class='BigInput']",title);
 		  webtest.click("xpath=//input[@value='保存']");
+		  webtest.alertAccept();
 		  webtest.leaveFrame();
 	  }
 	  //5.填写主题和内容发布帖子
@@ -117,7 +119,7 @@ public class Action {
 		  webtest.click("id=_M9");
 		  webtest.click("link=知识管理");
 		  webtest.enterFrame("rightMain");
-		  webtest.click("xpath=//input[@value='3']");
+		  webtest.click("xpath=//input[@value='6']");
 		  webtest.click("xpath=//button[@action='cancel_concern']");
 		  webtest.leaveFrame();
 	  }
@@ -128,6 +130,7 @@ public class Action {
 		  webtest.click("link=知识管理");
 		  webtest.enterFrame("rightMain");
 		  webtest.click("xpath=//button[@action='cancel_concern']");
+		  webtest.alertAccept();
 		  webtest.leaveFrame();
 	  }
 	  //11.进入“发布帖子”模块
@@ -182,6 +185,7 @@ public class Action {
 		  webtest.click("class=ke-iframe");
 		  webtest.type("class=ke-iframe",content);
 		  webtest.click("xpath=//input[@value='保存']");
+		  webtest.alertAccept();
         webtest.leaveFrame();	  
 	  }
 	  //16.发布帖子未填写标题
@@ -195,6 +199,7 @@ public class Action {
 		  webtest.click("class=ke-iframe");
 		  webtest.type("class=ke-iframe",content);
 		  webtest.click("xpath=//input[@value='保存']");
+		  webtest.alertAccept();
         webtest.leaveFrame();
 	  }
 	//17.发布帖子未填写内容
@@ -208,6 +213,7 @@ public class Action {
 		  webtest.click("xpath=//input[@name='title']");
 		  webtest.type("xpath=//input[@name='title']",title);
 		  webtest.click("xpath=//input[@value='保存']");
+		  webtest.alertAccept();
         webtest.leaveFrame();
 	  }
 	//18.验证发布帖子功能
@@ -256,6 +262,7 @@ public class Action {
 		  webtest.enterFrame("rightMain");
 		  webtest.click("xpath=//input[@value='6']");
 		  webtest.click("link=批量删除");
+		  webtest.alertAccept();
 		  webtest.leaveFrame();
 	  }
 	  //28.未选中文件，无法批量删除文件
@@ -265,6 +272,7 @@ public class Action {
 		  webtest.click("link=下载管理");
 		  webtest.enterFrame("rightMain");
 		  webtest.click("link=批量删除");
+		  webtest.alertAccept();
 		  webtest.leaveFrame();
 	  }
 	  //29.选中并成功删除全部文件
@@ -275,6 +283,7 @@ public class Action {
 		  webtest.enterFrame("rightMain");
 		  webtest.click("link=全选");
 		  webtest.click("link=批量删除");
+		  webtest.alertAccept();
 		  webtest.leaveFrame();
 	  }
 	  //30.给共享人员成功共享文件（未成功，没有网址无法定位）
@@ -327,7 +336,7 @@ public class Action {
 		  webtest.click("xpath=//button[@class='btn btn-danger']");
 		  webtest.leaveFrame();
 	  }
-	//36.验证新建文件夹名称功能
+	//36.验证新建文件夹功能
 	  public void newfile4(String sname) throws IOException 
 	  {
 		  webtest.click("id=_M9");
@@ -357,7 +366,8 @@ public class Action {
 		  webtest.click("id=_M9");
 		  webtest.click("link=下载管理");
 		  webtest.enterFrame("rightMain");
-		  webtest.click("xpath=//a[@did='1']");
+		  webtest.click("xpath=//a[@onclick='DeleteFile.document_type(5);']");
+		  webtest.alertAccept();
 		  webtest.leaveFrame();
 	  }
 	//39.验证查询文件能否为空
