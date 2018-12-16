@@ -4,29 +4,22 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="53.346">
+           time="59.817">
   <properties />
-            <testcase name="huiyi2" time="53.346" classname="com.webtest.PerOffice1.demo.Test13">
-                <failure type="org.openqa.selenium.NoSuchElementException"
-                  message="Cannot locate option with value: 75
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
-System info: host: &apos;LENOVO-PC&apos;, ip: &apos;169.254.133.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
-Driver info: driver.version: unknown"
+            <testcase name="huiyi2" time="59.817" classname="com.webtest.PerOffice1.demo.Test13">
+                <failure type="java.lang.AssertionError"
+                  message="expected [true] but found [false]"
               >
-<![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 75
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
-System info: host: 'LENOVO-PC', ip: '169.254.133.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
-Driver info: driver.version: unknown
-  org.openqa.selenium.support.ui.Select.selectByValue(Select.java:209)
-  com.webtest.core.WebDriverEngine.selectByValue(WebDriverEngine.java:224)
-  com.webtest.PerOffice1.demo.Action.huiyishenqing(Action.java:228)
-  com.webtest.PerOffice1.demo.Test13.huiyi2(Test13.java:24)
-  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.base/java.lang.reflect.Method.invoke(Unknown Source)
+<![CDATA[java.lang.AssertionError: expected [true] but found [false]
+  org.testng.Assert.fail(Assert.java:96)
+  org.testng.Assert.failNotEquals(Assert.java:776)
+  org.testng.Assert.assertTrue(Assert.java:44)
+  org.testng.Assert.assertTrue(Assert.java:54)
+  com.webtest.PerOffice1.demo.Test13.huiyi2(Test13.java:25)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
   org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
   org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
   org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)

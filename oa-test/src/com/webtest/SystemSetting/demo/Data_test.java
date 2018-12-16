@@ -1,6 +1,8 @@
-package com.webtest.demo;
+package com.webtest.SystemSetting.demo;
 
 import static org.testng.Assert.assertTrue;
+
+import java.io.IOException;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -12,9 +14,8 @@ import com.webtest.core.WebTestListener;
 public class Data_test extends BaseTest{
 	Data_Action action;
 	@BeforeMethod
-	public void setup() {
+	public void setup() throws IOException {
 		action=new Data_Action(webtest);
-		webtest.open("http://localhost:8033/tscoa/login.php");
 		action.login("admin", "admin123");
 	}
 	@Test

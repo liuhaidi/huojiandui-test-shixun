@@ -7,22 +7,47 @@
         <listener class-name="com.webtest.core.WebTestListener"></listener>
     </listeners>
 	
-	<test name="PerOffice2">
-	    <classes>
-	        <class name="com.webtest.PerOffice2.demo.AddReadTime_Test"></class>
-	        <class name="com.webtest.PerOffice2.demo.Comment_Test"></class>
-	        <class name="com.webtest.PerOffice2.demo.DelPerLog_Test"></class>
-	        <class name="com.webtest.PerOffice2.demo.FindInform_Test"></class>
-	        <class name="com.webtest.PerOffice2.demo.FindTel_Test"></class>
-	        <class name="com.webtest.PerOffice2.demo.MassMessage_Test"></class>
-	        <class name="com.webtest.PerOffice2.demo.NewLog_Test"></class>
-	        <class name="com.webtest.PerOffice2.demo.NewTel_Test"></class>
-	        <class name="com.webtest.PerOffice2.demo.PerInform_Test"></class>
-	        <class name="com.webtest.PerOffice2.demo.PerPwd_Test"></class>
-	        <class name="com.webtest.PerOffice2.demo.ReadShortMsg_Test"></class>
-	        <class name="com.webtest.PerOffice2.demo.TelMessage_Test"></class>
-	        <class name="com.webtest.PerOffice2.demo.WordLimit_Test"></class>
-	    </classes>
+	<test name="PerOffice1">
+		<classes>
+		    <class name="com.webtest.PerOffice1.demo.Beizhu3"></class>
+		    <class name="com.webtest.PerOffice1.demo.Daka1"></class>
+            <class name="com.webtest.PerOffice1.demo.Daka2"></class>
+            <class name="com.webtest.PerOffice1.demo.Daka6"></class>
+            <class name="com.webtest.PerOffice1.demo.Beizhu1"></class>
+            <class name="com.webtest.PerOffice1.demo.Beizhu2"></class>
+            <class name="com.webtest.PerOffice1.demo.Beizhu4"></class>
+            <class name="com.webtest.PerOffice1.demo.Duanxin1"></class>
+            <class name="com.webtest.PerOffice1.demo.Tongxunlu1"></class>
+            <class name="com.webtest.PerOffice1.demo.Tongxunlu2"></class>
+            <class name="com.webtest.PerOffice1.demo.Tongxunlu3"></class>
+            <class name="com.webtest.PerOffice1.demo.Huiyi1"></class>
+            <class name="com.webtest.PerOffice1.demo.Huiyi2"></class>
+            <class name="com.webtest.PerOffice1.demo.Huiyi3"></class>
+            <class name="com.webtest.PerOffice1.demo.Huiyi4"></class>
+            <class name="com.webtest.PerOffice1.demo.Huiyi5"></class>
+            <class name="com.webtest.PerOffice1.demo.Jihua1"></class>
+            <class name="com.webtest.PerOffice1.demo.Jihua2"></class>
+            <class name="com.webtest.PerOffice1.demo.Jihua3"></class>
+            <class name="com.webtest.PerOffice1.demo.Jihua4"></class>
+            <class name="com.webtest.PerOffice1.demo.Xinjianrenwu1"></class>
+            <class name="com.webtest.PerOffice1.demo.Xinjianrenwu3"></class>
+            <class name="com.webtest.PerOffice1.demo.Xinjianrenwu4"></class>
+            <class name="com.webtest.PerOffice1.demo.Xinjianrenwu5"></class>
+            <class name="com.webtest.PerOffice1.demo.Xinjianrenwu6"></class>
+            <class name="com.webtest.PerOffice1.demo.Xinjianrenwu7"></class>
+            <class name="com.webtest.PerOffice1.demo.Xinjianrenwu8"></class>
+            <class name="com.webtest.PerOffice1.demo.Xinjianrenwu9"></class>
+            <class name="com.webtest.PerOffice1.demo.Xinjianrenwu10"></class>
+            <class name="com.webtest.PerOffice1.demo.Xinjianrenwu11"></class>
+            <class name="com.webtest.PerOffice1.demo.Jindu1"></class>
+            <class name="com.webtest.PerOffice1.demo.Jindu3"></class>
+            <class name="com.webtest.PerOffice1.demo.Jindu4"></class>
+            <class name="com.webtest.PerOffice1.demo.Jindu5"></class>  
+            <class name="com.webtest.PerOffice1.demo.Chakanrenwu4"></class>
+            <class name="com.webtest.PerOffice1.demo.Zhixingren"></class>
+            <class name="com.webtest.PerOffice1.demo.Qingchu"></class>
+        </classes>
 	</test>
+	
 
 </suite>

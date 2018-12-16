@@ -106,31 +106,36 @@ public class Action {
 	//执行人任务列表
 	public void renwuliebiao1() throws IOException {
 		webtest.enterFrame("rightMain");
-		webtest.click("link=任务1");
+		webtest.click("link=源任务");
 		webtest.leaveFrame();
-		webtest.click("link=返回列表页");
+		webtest.getWindow(1);
+		webtest.click("link=<<返回列表页");
 	}
 	public void renwuliebiao2() throws IOException {
 		webtest.enterFrame("rightMain");
 		webtest.click("link=任务2");
 		webtest.leaveFrame();
-		webtest.click("link=返回列表页");
+		webtest.getWindow(1);
+		webtest.click("link=<<返回列表页");
 	}
 	public void renwuliebiao3() throws IOException {
 		webtest.enterFrame("rightMain");
 		webtest.click("link=任务3");
 		webtest.leaveFrame();
-		webtest.click("link=返回列表页");
+		webtest.getWindow(1);
+		webtest.click("link=<<返回列表页");
 	}
 	public void renwuliebiao4() throws IOException {
 		webtest.enterFrame("rightMain");
 		webtest.click("link=任务4");
 		webtest.leaveFrame();
-		webtest.click("link=返回列表页");
+		webtest.getWindow(1);
+		webtest.click("link=<<返回列表页");
 	}
 	//点击已完成
 	public void fanhuiliebiao() {
-		webtest.click("link=返回列表页");
+		
+		webtest.click("link=<<返回列表页");
 	}
 	//进度录入
 	public void jinduluru() throws IOException {

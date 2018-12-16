@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="13.308">
+           time="12.386">
   <properties />
   
   
-            <testcase name="testReadShortMsg" time="13.308" classname="com.webtest.PerOffice2.demo.ReadShortMsg_Test" />
+            <testcase name="testReadShortMsg" time="12.386" classname="com.webtest.PerOffice2.demo.ReadShortMsg_Test" />
       
 </testsuite>

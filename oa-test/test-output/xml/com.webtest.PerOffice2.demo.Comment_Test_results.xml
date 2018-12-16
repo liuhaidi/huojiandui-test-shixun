@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="18.202">
+           time="16.694">
   <properties />
   
   
-            <testcase name="testComment" time="18.202" classname="com.webtest.PerOffice2.demo.Comment_Test" />
+            <testcase name="testComment" time="16.694" classname="com.webtest.PerOffice2.demo.Comment_Test" />
       
 </testsuite>

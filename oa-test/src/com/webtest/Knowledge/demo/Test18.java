@@ -1,4 +1,4 @@
-package com.webtest.demo;
+package com.webtest.Knowledge.demo;
 
 import static org.testng.Assert.assertTrue;
 

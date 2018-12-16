@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="PerOffice1"
-           tests="4"
+           tests="1"
            failures="0"
            errors="0"
-           skipped="4"
-           time="0.000">
+           skipped="0"
+           time="22.647">
   <properties />
   
-            <testcase name="doAfterMethod" time="0.0" classname="com.webtest.PerOffice1.demo.Test23">
-          <skipped />
-    </testcase>
-            <testcase name="doBeforeSuite" time="0.0" classname="com.webtest.PerOffice1.demo.Test23">
-          <skipped />
-    </testcase>
-            <testcase name="startUp" time="0.0" classname="com.webtest.PerOffice1.demo.Test23">
-          <skipped />
-    </testcase>
-            <testcase name="xinjianrenwu3" time="0.0" classname="com.webtest.PerOffice1.demo.Test23">
-          <skipped />
-    </testcase>
   
-  
+            <testcase name="xinjianrenwu3" time="22.647" classname="com.webtest.PerOffice1.demo.Test23" />
+      
 </testsuite>

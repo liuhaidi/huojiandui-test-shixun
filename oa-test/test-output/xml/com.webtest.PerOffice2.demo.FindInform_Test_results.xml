@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="15.135">
+           time="13.909">
   <properties />
   
   
-            <testcase name="test_findbyright" time="15.135" classname="com.webtest.PerOffice2.demo.FindInform_Test" />
+            <testcase name="test_findbyright" time="13.909" classname="com.webtest.PerOffice2.demo.FindInform_Test" />
       
 </testsuite>

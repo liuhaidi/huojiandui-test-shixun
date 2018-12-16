@@ -14,14 +14,17 @@ import javax.mail.internet.MimeMultipart;
 import javax.mail.internet.MimeUtility;
 
 public class Sendmail {
-		    public static String myEmailAccount /*= "2310618296@qq.com"*/;
-		    public static String myEmailPassword /*= "mruoruywpejzdjfh"*/;
+		    public static String myEmailAccount;//发件人
+		    public static String myEmailPassword;//密码
 		    // 发件人邮箱的 SMTP 服务器地址
 		    // 网易163邮箱的 SMTP 服务器地址为: smtp.163.com
-		    public static String myEmailSMTPHost /*= "smtp.qq.com"*/;
-		    // 收件人邮箱（替换为自己知道的有效邮箱）
-		    public static String receiveMailAccount /*= "3012115199@qq.com"*/;
-		    public void sendMail_Txt(String myEmailAccount,String myEmailPassword,String myEmailSMTPHost,String receiveMailAccount) throws Exception{
+		    public static String myEmailSMTPHost;//服务器地址
+		    public static String receiveMailAccount;//收件人
+		    public static String title;//邮件主题
+		    public static String text;//邮件正文
+		    public static String picture;//图片路径
+		    public static String fujian;//文件路径
+		    public void sendMail_Txt(String myEmailAccount,String myEmailPassword,String myEmailSMTPHost,String receiveMailAccount,String title,String text) throws Exception{
 		        // 1. 创建参数配置, 用于连接邮件服务器的参数配置
 		        Properties props = new Properties();                    // 参数配置
 		        props.setProperty("mail.transport.protocol", "smtp");   // 使用的协议（JavaMail规范要求）
@@ -32,12 +35,11 @@ public class Sendmail {
 		        props.setProperty("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
 		        props.setProperty("mail.smtp.socketFactory.fallback", "false");
 		        props.setProperty("mail.smtp.socketFactory.port", smtpPort);
-		        
 		        // 2. 根据配置创建会话对象, 用于和邮件服务器交互
 		        Session session = Session.getDefaultInstance(props);
 		        session.setDebug(true);// 设置为debug模式, 可以查看详细的发送 log
 		        // 3. 创建一封邮件
-		        MimeMessage message = createMimeMessage(session, myEmailAccount, receiveMailAccount);
+		        MimeMessage message = createMimeMessage(session, myEmailAccount, receiveMailAccount,title,text);
 		        // 4. 根据 Session 获取邮件传输对象
 		        Transport transport = session.getTransport();
 		        // 5. 使用 邮箱账号 和 密码 连接邮件服务器, 这里认证的邮箱必须与 message 中的发件人邮箱一致, 否则报错
@@ -48,7 +50,7 @@ public class Sendmail {
 		        // 7. 关闭连接
 		        transport.close();
 		    }
-		    public void sendMail_TuWen(String myEmailAccount,String myEmailPassword,String myEmailSMTPHost,String receiveMailAccount) throws Exception{
+		    public void sendMail_TuWen(String myEmailAccount,String myEmailPassword,String myEmailSMTPHost,String receiveMailAccount,String title,String text,String picture,String fujian) throws Exception{
 		        Properties props = new Properties();                    // 参数配置
 		        props.setProperty("mail.transport.protocol", "smtp");   // 使用的协议（JavaMail规范要求）
 		        props.setProperty("mail.smtp.host", myEmailSMTPHost);   // 发件人的邮箱的 SMTP 服务器地址
@@ -60,30 +62,30 @@ public class Sendmail {
 		        props.setProperty("mail.smtp.socketFactory.port", smtpPort);
 		        Session session = Session.getDefaultInstance(props);
 		        session.setDebug(true);// 设置为debug模式, 可以查看详细的发送 log
-		        MimeMessage message = createMimeMessageTuWen(session, myEmailAccount, receiveMailAccount);
+		        MimeMessage message = createMimeMessageTuWen(session, myEmailAccount, receiveMailAccount,title,text,picture,fujian);
 		        Transport transport = session.getTransport();
 		        transport.connect(myEmailAccount, myEmailPassword);
 		        transport.sendMessage(message, message.getAllRecipients());
 		        transport.close();
 		    }
-		    public static MimeMessage createMimeMessage(Session session, String sendMail, String receiveMail) throws Exception {
+		    public static MimeMessage createMimeMessage(Session session, String sendMail, String receiveMail,String title,String text) throws Exception {
 		        // 1. 创建一封邮件
 		        MimeMessage message = new MimeMessage(session);
 		        // 2. From: 发件人
-		        message.setFrom(new InternetAddress(sendMail, "liuhaidi", "UTF-8"));
+		        message.setFrom(new InternetAddress(sendMail));
 		        // 3. To: 收件人（可以增加多个收件人、抄送、密送）
-		        message.setRecipient(MimeMessage.RecipientType.TO, new InternetAddress(receiveMail, "songxiaojiao", "UTF-8"));
+		        message.setRecipient(MimeMessage.RecipientType.TO, new InternetAddress(receiveMail));
 		        // 4. Subject: 邮件主题
-		        message.setSubject("javamail发送邮件", "UTF-8");
+		        message.setSubject(title, "UTF-8");
 		        // 5. Content: 邮件正文（可以使用html标签）
-		        message.setContent("helloworld!", "text/html;charset=UTF-8");
+		        message.setContent(text, "text/html;charset=UTF-8");
 		        // 6. 设置发件时间
 		        message.setSentDate(new Date());
 		        // 7. 保存设置
 		        message.saveChanges();
 		        return message;
 		    }
-		    public static MimeMessage createMimeMessageTuWen(Session session, String sendMail, String receiveMail) throws Exception {
+		    public static MimeMessage createMimeMessageTuWen(Session session, String sendMail, String receiveMail,String title,String text,String picture,String fujian) throws Exception {
 		    	 //1.创建一封邮件的实例对象
 		        MimeMessage message = new MimeMessage(session);
 		        //2.设置发件人地址
@@ -96,25 +98,25 @@ public class Sendmail {
 		         */
 		        message.setRecipient(MimeMessage.RecipientType.TO,new InternetAddress(receiveMail));
 		        //4.设置邮件主题
-		        message.setSubject("邮件主题(包含图片和附件)","UTF-8");
+		        message.setSubject(title,"UTF-8");
 		         
 		        //下面是设置邮件正文
-		        message.setContent("简单的纯文本邮件！", "text/html;charset=UTF-8");
+		        message.setContent(text, "text/html;charset=UTF-8");
 		        // 5. 创建图片"节点"
 		        MimeBodyPart image = new MimeBodyPart();
 		        // 读取本地文件
-		        DataHandler dh = new DataHandler(new FileDataSource("D:\\software\\eclipse-java-oxygen-2-win32-x86_64\\oa-test\\20181121-141106.jpg")); 
+		        DataHandler dh = new DataHandler(new FileDataSource(picture)); 
 		        // 将图片数据添加到"节点"
 		        image.setDataHandler(dh); 
 		        // 为"节点"设置一个唯一编号（在文本"节点"将引用该ID）
 		        image.setContentID("mailTestPic");     
 		        // 6. 创建文本"节点"
-		        MimeBodyPart text = new MimeBodyPart();
-		        // 这里添加图片的方式是将整个图片包含到邮件内容中, 实际上也可以以 http 链接的形式添加网络图片
-		        text.setContent("这是一张图片<br/><a href='http://www.cnblogs.com/ysocean/p/7666061.html'><img src='cid:mailTestPic'/></a>", "text/html;charset=UTF-8");
+//		        MimeBodyPart text = new MimeBodyPart();
+//		        // 这里添加图片的方式是将整个图片包含到邮件内容中, 实际上也可以以 http 链接的形式添加网络图片
+//		        text.setContent("这是一张图片<br/><a href='http://www.cnblogs.com/ysocean/p/7666061.html'><img src='cid:mailTestPic'/></a>", "text/html;charset=UTF-8");
 		        // 7. （文本+图片）设置 文本 和 图片"节点"的关系（将 文本 和 图片"节点"合成一个混合"节点"）
 		        MimeMultipart mm_text_image = new MimeMultipart();
-		        mm_text_image.addBodyPart(text);
+//		        mm_text_image.addBodyPart(text);
 		        mm_text_image.addBodyPart(image);
 		        mm_text_image.setSubType("related");    // 关联关系
 		        // 8. 将 文本+图片 的混合"节点"封装成一个普通"节点"
@@ -125,7 +127,7 @@ public class Sendmail {
 		        // 9. 创建附件"节点"
 		        MimeBodyPart attachment = new MimeBodyPart();
 		        // 读取本地文件
-		        DataHandler dh2 = new DataHandler(new FileDataSource("D:\\study\\three1\\test\\web\\笔记.docx"));
+		        DataHandler dh2 = new DataHandler(new FileDataSource(fujian));
 		        // 将附件数据添加到"节点"
 		        attachment.setDataHandler(dh2);
 		        // 设置附件的文件名（需要编码）
