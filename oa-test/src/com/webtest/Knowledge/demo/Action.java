@@ -1,4 +1,4 @@
-package com.webtest.Knowledge.demo;
+package com.webtest.demo;
 
 import java.io.IOException;
 

@@ -11,19 +11,12 @@ import com.webtest.core.BaseTest;
 import com.webtest.core.WebTestListener;
 import com.webtest.dataprovider.NSDataProvider;
 @Listeners(WebTestListener.class)
-public class Front_Login_Test extends BaseTest{
+public class OthersEnter extends BaseTest{
 	
-	@Test(priority=1)
-	public void LoginSuccess() throws Exception  {
+	@Test
+	public void Others() throws Exception  {
 		Action action =new Action(webtest);
 		action.login("admin", "123456");
-    	assertTrue(webtest.ifContains("ÍË³ö"));
+		action.others();
 	}
-	@Test(priority=0)
-	public void LoginFail() throws Exception  {
-		Action action =new Action(webtest);
-		action.login("admin", "654321");
-		assertTrue(webtest.ifContains("µÇÂ¼Ê§°Ü111 "));
-	}
-	
 }
