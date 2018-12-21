@@ -1,0 +1,12 @@
+[FATAL] 2018-12-14 08:23:44,519 com.api.utils.Checker - expectedValue doesn't match actualValue,actual Value is :请求失败; expected Value is :success
+[FATAL] 2018-12-14 08:47:45,840 com.api.utils.Checker - expectedValue doesn't match actualValue,actual Value is :200; expected Value is :201
+[FATAL] 2018-12-14 09:08:34,569 com.api.utils.Checker - expectedValue doesn't match actualValue,actual Value is :用户名或者密码错误; expected Value is :请求失败
+[FATAL] 2018-12-14 09:10:22,140 com.api.utils.Checker - expectedValue doesn't match actualValue,actual Value is :用户名或者密码错误; expected Value is :用户名为空
+[FATAL] 2018-12-14 09:10:43,383 com.api.utils.Checker - expectedValue doesn't match actualValue,actual Value is :用户名或者密码错误; expected Value is :用户名为空
+[FATAL] 2018-12-14 10:39:51,249 com.api.utils.Checker - expectedValue doesn't match actualValue,actual Value is :用户名或者密码错误; expected Value is :用户名为空
+[FATAL] 2018-12-17 15:11:57,686 com.api.utils.Checker - expectedValue doesn't match actualValue,actual Value is :用户名或者密码错误; expected Value is :用户名为空
+[ERROR] 2018-12-17 15:11:57,694 com.api.utils.Log - com.api.test.PostJsonDemo@224edc67LoginByFail2运行失败
+[FATAL] 2018-12-17 15:12:18,305 com.api.utils.Checker - expectedValue doesn't match actualValue,actual Value is :用户名或者密码错误; expected Value is :用户名为空
+[ERROR] 2018-12-17 15:12:18,309 com.api.utils.Log - com.api.test.PostJsonDemo@224edc67LoginByFail2运行失败
+[FATAL] 2018-12-17 18:12:19,089 com.api.utils.Checker - expectedValue doesn't match actualValue,actual Value is :用户名或者密码错误; expected Value is :用户名为空
+[ERROR] 2018-12-17 18:12:19,093 com.api.utils.Log - com.api.test.PostJsonDemo@23e028a9LoginByFail2运行失败
