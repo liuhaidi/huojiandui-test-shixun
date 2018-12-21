@@ -21,25 +21,25 @@ public class Partment_Action_Test extends BaseTest{
 	public void Add_top_test() {
 		action.Add_top("销售部");
 		assertTrue(webtest.ifContains("批量部门信息更新成功"));
-		webtest.leaveFrame();
+		
 	}
 	@Test
 	public void Add_test() {
 		action.Add("营销1","销售部");
 		assertTrue(webtest.ifContains("批量部门信息更新成功"));
-		webtest.leaveFrame();
+		
 	}
 	@Test
 	public void Detail_test() {
 		action.Detail();
 		assertTrue(webtest.ifContains("营销"));
-		webtest.leaveFrame();
+		
 	}
 	@Test 
 	public void Delete_test() {
 		action.Delete(16);
 		assertTrue(webtest.ifContains("部门信息删除成功"));
-		webtest.leaveFrame();
+		
 	}
 
 

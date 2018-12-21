@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PerOffice2"
+<testsuite name="PerOffice2-songxiaojiao"
            tests="2"
            failures="2"
            errors="0"
            skipped="0"
-           time="35.689">
+           time="35.635">
   <properties />
-            <testcase name="testWordLimit1" time="18.522" classname="com.webtest.PerOffice2.demo.WordLimit_Test">
+            <testcase name="testWordLimit2" time="17.108" classname="com.webtest.PerOffice2.demo.WordLimit_Test">
                 <failure type="java.lang.AssertionError"
-                  message="expected [false] but found [true]"
+                  message="expected [true] but found [false]"
               >
-<![CDATA[java.lang.AssertionError: expected [false] but found [true]
+<![CDATA[java.lang.AssertionError: expected [true] but found [false]
   org.testng.Assert.fail(Assert.java:96)
   org.testng.Assert.failNotEquals(Assert.java:776)
-  org.testng.Assert.assertFalse(Assert.java:65)
-  org.testng.Assert.assertFalse(Assert.java:75)
-  com.webtest.PerOffice2.demo.WordLimit_Test.testWordLimit1(WordLimit_Test.java:21)
+  org.testng.Assert.assertTrue(Assert.java:44)
+  org.testng.Assert.assertTrue(Assert.java:54)
+  com.webtest.PerOffice2.demo.WordLimit_Test.testWordLimit2(WordLimit_Test.java:31)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -45,16 +45,16 @@
       </failure>
 
           </testcase>
-            <testcase name="testWordLimit2" time="17.167" classname="com.webtest.PerOffice2.demo.WordLimit_Test">
+            <testcase name="testWordLimit1" time="18.527" classname="com.webtest.PerOffice2.demo.WordLimit_Test">
                 <failure type="java.lang.AssertionError"
-                  message="expected [true] but found [false]"
+                  message="expected [false] but found [true]"
               >
-<![CDATA[java.lang.AssertionError: expected [true] but found [false]
+<![CDATA[java.lang.AssertionError: expected [false] but found [true]
   org.testng.Assert.fail(Assert.java:96)
   org.testng.Assert.failNotEquals(Assert.java:776)
-  org.testng.Assert.assertTrue(Assert.java:44)
-  org.testng.Assert.assertTrue(Assert.java:54)
-  com.webtest.PerOffice2.demo.WordLimit_Test.testWordLimit2(WordLimit_Test.java:31)
+  org.testng.Assert.assertFalse(Assert.java:65)
+  org.testng.Assert.assertFalse(Assert.java:75)
+  com.webtest.PerOffice2.demo.WordLimit_Test.testWordLimit1(WordLimit_Test.java:21)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)

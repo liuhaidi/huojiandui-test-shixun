@@ -12,7 +12,7 @@ public class Login_Action {
 	}
 //登录	
 	public void login(String email,String password) throws IOException {
-		webtest.open(ReadProperties.getPropertyValue("baseUrl"));
+		webtest.open(ReadProperties.getPropertyValue("base_url"));
 		webtest.type("name=username", email);
 		webtest.type("name=password", password);
 		webtest.click("link=登录");
@@ -23,7 +23,7 @@ public class Login_Action {
 	}
 //考勤管理
 	public void Time() throws InterruptedException {
-		webtest.click("id=_M11");
+		resource();
 		webtest.click("link=考勤管理");
 		Thread.sleep(3000);
 		webtest.enterFrame("rightMain");
@@ -31,7 +31,7 @@ public class Login_Action {
 		webtest.leaveFrame();
 	}
 	public void ZhouQi(String value,String value1) {
-		webtest.click("id=_M11");
+		resource();
 		webtest.click("link=考勤管理");
 		webtest.enterFrame("rightMain");
 		webtest.click("xpath=//input[@name='vstartdate']");
@@ -41,7 +41,7 @@ public class Login_Action {
 		webtest.click("class=SmallButton");
 		}
 	public void ShanChuOne() throws InterruptedException {
-		webtest.click("id=_M11");
+		resource();
 		webtest.click("link=考勤管理");
 		Thread.sleep(3000);
 		webtest.enterFrame("rightMain");
@@ -49,7 +49,7 @@ public class Login_Action {
 		webtest.click("link=清理数据");
 	}
 	public void ShanChuMore() throws InterruptedException {
-		webtest.click("id=_M11");
+		resource();
 		webtest.click("link=考勤管理");
 		Thread.sleep(3000);
 		webtest.enterFrame("rightMain");
@@ -58,7 +58,7 @@ public class Login_Action {
 		webtest.click("link=清理数据");
 	}
 	public void DaoChu() throws InterruptedException {
-		webtest.click("id=_M11");
+		resource();
 		webtest.click("link=考勤管理");
 		Thread.sleep(3000);
 		webtest.enterFrame("rightMain");
@@ -133,7 +133,7 @@ public class Login_Action {
 		webtest.click("link=培训管理");
 		webtest.enterFrame("rightMain");
 		webtest.click("link=我参与的培训");
-		webtest.typeAndClear("xpath=//input[@name='channel']",value);
+		webtest.selectByValue("xpath=//select[@name='channel']", value);
 		webtest.click("link=查询");
 		
 	}
@@ -141,23 +141,22 @@ public class Login_Action {
 		public void JiLu(String value) {
 			resource();
 			webtest.click("link=奖惩记录");
-			webtest.selectByVisibleText("name=channel", value);
+			webtest.selectByValue("xpath=//select[@name='channel']", value);
 			webtest.click("link=查询");
 		}
 		
-		public void FaBuJiangCheng(String value,String value1,String value2,String value3,String value4,String value5) throws InterruptedException {
+		public void FaBuJiangCheng(String value,String value1,String value2,String value3,String value4) throws InterruptedException {
 			resource();
 			webtest.click("link=奖惩记录");
 			Thread.sleep(3000);
 			webtest.enterFrame("rightMain");
-			webtest.click("link=发布信息");
-			webtest.selectByVisibleText("name=rewardsdate", value);
-			webtest.selectByVisibleText("name=rewardskey", value1);
-			webtest.selectByVisibleText("name=price", value2);
-			webtest.selectByVisibleText("name=project", value3);
-			webtest.selectByVisibleText("name=wagesmonth_year", value4);
-			webtest.selectByVisibleText("name=wagesmonth_month", value5);
-			webtest.click("link=保存");
+			webtest.click("xpath=//button[@action='new_work']");
+			webtest.selectByValue("xpath=//select[@name='project']", value);
+			webtest.selectByValue("xpath=//select[@name='wagesmonth_year']", value1);
+			webtest.selectByValue("xpath=//select[@name='wagesmonth_month']", value2);
+			webtest.type("name=rewardsdate", value3);
+			webtest.type("name=price", value4);
+			webtest.click("xpath=//input[@value='保存']");
 		}
 //基础类别测试
 		public void CaiDanTongBu() throws InterruptedException {
@@ -170,10 +169,10 @@ public class Login_Action {
 			resource();
 			webtest.click("link=人事合同类型");
 			webtest.enterFrame("rightMain");
-			webtest.click("link=增加新人事合同类型");
+			webtest.click("link=+增加新人事合同类型");
 			Thread.sleep(3000);
-			webtest.selectByVisibleText("name=newname[]", value);
-			webtest.click("link=保存");
+			webtest.type("name=newname[]", value);
+			webtest.click("xpath=//input[@value='保存']");
 }
 		public void XueLiShanChu() throws InterruptedException {
 			resource();

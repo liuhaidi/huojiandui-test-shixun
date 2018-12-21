@@ -11,11 +11,11 @@ import org.testng.annotations.Test;
 import com.webtest.core.BaseTest;
 import com.webtest.core.WebTestListener;
 @Listeners(WebTestListener.class)
-public class commange_test extends BaseTest {
-	commanage_Action action;
+public class Commange_test extends BaseTest {
+	Commanage_Action action;
 	@BeforeMethod
 	public void setup() throws IOException {
-		action=new commanage_Action(webtest);
+		action=new Commanage_Action(webtest);
 		action.login("admin", "123456");
 	}
 	@Test

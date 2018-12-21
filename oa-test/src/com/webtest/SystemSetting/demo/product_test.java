@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import com.webtest.core.BaseTest;
 import com.webtest.core.WebTestListener;
 
-public class product_test extends BaseTest{
+public class Product_test extends BaseTest{
 	product_Action action;
 	@BeforeMethod
 	public void setup() throws IOException {
@@ -22,23 +22,9 @@ public class product_test extends BaseTest{
 	public void input_test() {
 		action.input("1234567894561235");
 		assertTrue(webtest.ifContains("³É¹¦"));
-		webtest.leaveFrame();
 		
 		
 	}
-	@Test
-	public void input_test1() {
-		action.input("1234567894");
-		assertTrue(webtest.ifContains("¿Õ"));
-		webtest.leaveFrame();
-		
-		
-	}
-	@Test
-	public void qingkong_test() {
-		action.input("123456789");
-		webtest.leaveFrame();
-		
-	}
-
+	
+	
 }

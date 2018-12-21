@@ -5,9 +5,9 @@ import java.io.IOException;
 import com.webtest.core.WebDriverEngine;
 import com.webtest.utils.ReadProperties;
 
-public class commanage_Action {
+public class Commanage_Action {
 	private WebDriverEngine webtest;
-	public commanage_Action(WebDriverEngine webtest) {
+	public Commanage_Action(WebDriverEngine webtest) {
 		this.webtest=webtest;
 	}
 	public void login(String email,String password) throws IOException {

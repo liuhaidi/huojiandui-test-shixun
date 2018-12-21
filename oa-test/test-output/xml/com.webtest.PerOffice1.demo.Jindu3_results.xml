@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PerOffice1"
+<testsuite name="PerOffice1-liuhaidi"
            tests="1"
            failures="1"
            errors="0"
            skipped="0"
-           time="22.560">
+           time="13.055">
   <properties />
-            <testcase name="jindu3" time="22.560" classname="com.webtest.PerOffice1.demo.Jindu3">
-                <failure type="java.lang.AssertionError"
-                  message="expected [true] but found [false]"
+            <testcase name="jindu3" time="13.055" classname="com.webtest.PerOffice1.demo.Jindu3">
+                <failure type="java.lang.IndexOutOfBoundsException"
+                  message="Index: 1, Size: 1"
               >
-<![CDATA[java.lang.AssertionError: expected [true] but found [false]
-  org.testng.Assert.fail(Assert.java:96)
-  org.testng.Assert.failNotEquals(Assert.java:776)
-  org.testng.Assert.assertTrue(Assert.java:44)
-  org.testng.Assert.assertTrue(Assert.java:54)
-  com.webtest.PerOffice1.demo.Jindu3.jindu3(Jindu3.java:28)
+<![CDATA[java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+  java.util.ArrayList.rangeCheck(Unknown Source)
+  java.util.ArrayList.get(Unknown Source)
+  com.webtest.core.WebDriverEngine.getWindow(WebDriverEngine.java:292)
+  com.webtest.PerOffice1.demo.Action.renwuliebiao1(Action.java:111)
+  com.webtest.PerOffice1.demo.Jindu3.jindu3(Jindu3.java:23)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)

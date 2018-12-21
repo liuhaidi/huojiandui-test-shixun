@@ -28,10 +28,4 @@ public class VoteTest1 extends BaseTest {
 		vote.title("第一次投票","测试主题为中文发起投票","第一个选项");
 		assertTrue(webtest.ifContains("投票信息操作成功"));
 	}
-	@Test(priority=2)
-	public void Vote3() {
-		Vote_Action vote= new Vote_Action(webtest);
-		vote.title("","测试主题为数字发起投票","第一个选项");
-		assertTrue(webtest.ifContains("主题不能为空"));
-	}
 }

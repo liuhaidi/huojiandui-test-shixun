@@ -3,16 +3,16 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - PerOffice2</title>
+  <title>Test Results Report - PerOffice2-songxiaojiao</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>PerOffice2</h1>
+<h1>PerOffice2-songxiaojiao</h1>
 <p>
-  Test duration: 389.900s
+  Test duration: 380.739s
 </p>
 
 
@@ -28,20 +28,35 @@
                   testMassMsg
       </td>
   <td class="duration">
-    20.726s
+    16.428s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=netReset&amp;u=http%3A//localhost%3A8032/oa/admin.php%3Fac%3Dsmsadd%26do%3Dsave%26fileurl%3Dsms&amp;c=UTF-8&amp;f=regular&amp;d=%E8%BD%BD%E5%85%A5%E9%A1%B5%E9%9D%A2%E6%97%B6%E4%B8%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E8%BF%9E%E6%8E%A5%E8%A2%AB%E9%87%8D%E7%BD%AE%E3%80%82<br/>
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;<br/>
+System info: host: &apos;LIU&apos;, ip: &apos;169.254.28.25&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_51&apos;<br/>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
+Capabilities [{moz:profile=C:\Users\ASUS\AppData\Local\Temp\rust_mozprofile.gQHTboVadmlB, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=17184, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]<br/>
+Session ID: 73e68b1b-c071-4e10-8498-61c06e415434</b></a><br />
     <div class="stackTrace" id="exception-0">
-              org.testng.Assert.fail(Assert.java:96)<br />
-              org.testng.Assert.failNotEquals(Assert.java:776)<br />
-              org.testng.Assert.assertTrue(Assert.java:44)<br />
-              org.testng.Assert.assertTrue(Assert.java:54)<br />
-              com.webtest.PerOffice2.demo.MassMessage_Test.testMassMsg(MassMessage_Test.java:20)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)<br />
+              com.webtest.core.WebDriverEngine.click(WebDriverEngine.java:144)<br />
+              com.webtest.PerOffice2.demo.PageAction.sendMessage(PageAction.java:66)<br />
+              com.webtest.PerOffice2.demo.MassMessage_Test.testMassMsg(MassMessage_Test.java:19)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
@@ -79,7 +94,7 @@
                   test2
       </td>
   <td class="duration">
-    8.900s
+    8.857s
   </td>
   <td class="result">
         
@@ -130,7 +145,7 @@
                   test_failed1
       </td>
   <td class="duration">
-    11.584s
+    11.413s
   </td>
   <td class="result">
         
@@ -172,153 +187,6 @@
                 </div>
       </td>
 </tr>
-<tr>
-  <td class="method">
-                  test_failed3
-      </td>
-  <td class="duration">
-    3.081s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id right<br/>
-Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;<br/>
-System info: host: &apos;LIU&apos;, ip: &apos;169.254.28.25&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_51&apos;<br/>
-Driver info: driver.version: unknown</b></a><br />
-    <div class="stackTrace" id="exception-3">
-              org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:925)<br />
-              com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:68)<br />
-              com.webtest.PerOffice2.demo.PageAction.perpwd(PageAction.java:169)<br />
-              com.webtest.PerOffice2.demo.PerPwd_Test.test_failed3(PerPwd_Test.java:33)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
-              java.lang.reflect.Method.invoke(Unknown Source)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:580)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-              org.testng.TestNG.run(TestNG.java:1017)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  test_failed4
-      </td>
-  <td class="duration">
-    3.057s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id right<br/>
-Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;<br/>
-System info: host: &apos;LIU&apos;, ip: &apos;169.254.28.25&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_51&apos;<br/>
-Driver info: driver.version: unknown</b></a><br />
-    <div class="stackTrace" id="exception-4">
-              org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:925)<br />
-              com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:68)<br />
-              com.webtest.PerOffice2.demo.PageAction.perpwd(PageAction.java:169)<br />
-              com.webtest.PerOffice2.demo.PerPwd_Test.test_failed4(PerPwd_Test.java:41)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
-              java.lang.reflect.Method.invoke(Unknown Source)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:580)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-              org.testng.TestNG.run(TestNG.java:1017)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  test_failed5
-      </td>
-  <td class="duration">
-    3.060s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-5', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id right<br/>
-Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;<br/>
-System info: host: &apos;LIU&apos;, ip: &apos;169.254.28.25&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_51&apos;<br/>
-Driver info: driver.version: unknown</b></a><br />
-    <div class="stackTrace" id="exception-5">
-              org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:925)<br />
-              com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:68)<br />
-              com.webtest.PerOffice2.demo.PageAction.perpwd(PageAction.java:169)<br />
-              com.webtest.PerOffice2.demo.PerPwd_Test.test_failed5(PerPwd_Test.java:49)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
-              java.lang.reflect.Method.invoke(Unknown Source)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:580)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-              org.testng.TestNG.run(TestNG.java:1017)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                </div>
-      </td>
-</tr>
           <tr>
         <td colspan="3" class="group">com.webtest.PerOffice2.demo.TelMessage_Test</td>
       </tr>
@@ -328,15 +196,15 @@ Driver info: driver.version: unknown</b></a><br />
                   testdelfailed
       </td>
   <td class="duration">
-    11.466s
+    11.348s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-6', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br />
-    <div class="stackTrace" id="exception-6">
+        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br />
+    <div class="stackTrace" id="exception-3">
               org.testng.Assert.fail(Assert.java:96)<br />
               org.testng.Assert.failNotEquals(Assert.java:776)<br />
               org.testng.Assert.assertTrue(Assert.java:44)<br />
@@ -379,15 +247,15 @@ Driver info: driver.version: unknown</b></a><br />
                   testWordLimit1
       </td>
   <td class="duration">
-    18.522s
+    18.527s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-7', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [false] but found [true]</b></a><br />
-    <div class="stackTrace" id="exception-7">
+        <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [false] but found [true]</b></a><br />
+    <div class="stackTrace" id="exception-4">
               org.testng.Assert.fail(Assert.java:96)<br />
               org.testng.Assert.failNotEquals(Assert.java:776)<br />
               org.testng.Assert.assertFalse(Assert.java:65)<br />
@@ -426,15 +294,15 @@ Driver info: driver.version: unknown</b></a><br />
                   testWordLimit2
       </td>
   <td class="duration">
-    17.167s
+    17.108s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-8', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br />
-    <div class="stackTrace" id="exception-8">
+        <a href="javascript:toggleElement('exception-5', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br />
+    <div class="stackTrace" id="exception-5">
               org.testng.Assert.fail(Assert.java:96)<br />
               org.testng.Assert.failNotEquals(Assert.java:776)<br />
               org.testng.Assert.assertTrue(Assert.java:44)<br />
@@ -482,7 +350,7 @@ Driver info: driver.version: unknown</b></a><br />
                   testReadTime
       </td>
   <td class="duration">
-    13.673s
+    13.718s
   </td>
   <td class="result">
         
@@ -500,7 +368,7 @@ Driver info: driver.version: unknown</b></a><br />
                   testComment
       </td>
   <td class="duration">
-    16.694s
+    16.502s
   </td>
   <td class="result">
         
@@ -518,7 +386,7 @@ Driver info: driver.version: unknown</b></a><br />
                   testDelPerLog
       </td>
   <td class="duration">
-    12.497s
+    12.488s
   </td>
   <td class="result">
         
@@ -536,7 +404,7 @@ Driver info: driver.version: unknown</b></a><br />
                   test_findbyright
       </td>
   <td class="duration">
-    13.909s
+    13.659s
   </td>
   <td class="result">
         
@@ -554,7 +422,7 @@ Driver info: driver.version: unknown</b></a><br />
                   test_findbykey
       </td>
   <td class="duration">
-    16.459s
+    16.239s
   </td>
   <td class="result">
         
@@ -572,7 +440,7 @@ Driver info: driver.version: unknown</b></a><br />
                   testNewLog
       </td>
   <td class="duration">
-    13.776s
+    13.541s
   </td>
   <td class="result">
         
@@ -590,7 +458,7 @@ Driver info: driver.version: unknown</b></a><br />
                   test_noinfo
       </td>
   <td class="duration">
-    21.597s
+    21.833s
   </td>
   <td class="result">
         
@@ -608,7 +476,7 @@ Driver info: driver.version: unknown</b></a><br />
                   test1
       </td>
   <td class="duration">
-    10.340s
+    10.315s
   </td>
   <td class="result">
         
@@ -622,7 +490,7 @@ Driver info: driver.version: unknown</b></a><br />
                   test3
       </td>
   <td class="duration">
-    13.891s
+    13.948s
   </td>
   <td class="result">
         
@@ -636,7 +504,7 @@ Driver info: driver.version: unknown</b></a><br />
                   test4
       </td>
   <td class="duration">
-    13.896s
+    13.889s
   </td>
   <td class="result">
         
@@ -654,7 +522,7 @@ Driver info: driver.version: unknown</b></a><br />
                   test_failed2
       </td>
   <td class="duration">
-    9.964s
+    9.926s
   </td>
   <td class="result">
         
@@ -672,7 +540,7 @@ Driver info: driver.version: unknown</b></a><br />
                   testReadShortMsg
       </td>
   <td class="duration">
-    12.386s
+    12.354s
   </td>
   <td class="result">
         

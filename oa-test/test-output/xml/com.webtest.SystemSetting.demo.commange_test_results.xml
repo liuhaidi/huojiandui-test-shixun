@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SystemSetting"
+<testsuite name="SystemSetting-wanghaoxin"
            tests="2"
            failures="2"
            errors="0"
            skipped="0"
-           time="10.988">
+           time="11.063">
   <properties />
-            <testcase name="install_test" time="5.492" classname="com.webtest.SystemSetting.demo.commange_test">
+            <testcase name="install_test" time="5.519" classname="com.webtest.SystemSetting.demo.Commange_test">
                 <failure type="java.lang.AssertionError"
                   message="expected [true] but found [false]"
               >
@@ -15,7 +15,7 @@
   org.testng.Assert.failNotEquals(Assert.java:776)
   org.testng.Assert.assertTrue(Assert.java:44)
   org.testng.Assert.assertTrue(Assert.java:54)
-  com.webtest.SystemSetting.demo.commange_test.install_test(commange_test.java:24)
+  com.webtest.SystemSetting.demo.Commange_test.install_test(Commange_test.java:24)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -45,7 +45,7 @@
       </failure>
 
           </testcase>
-            <testcase name="uninstall_test" time="5.496" classname="com.webtest.SystemSetting.demo.commange_test">
+            <testcase name="uninstall_test" time="5.544" classname="com.webtest.SystemSetting.demo.Commange_test">
                 <failure type="java.lang.AssertionError"
                   message="expected [true] but found [false]"
               >
@@ -54,7 +54,7 @@
   org.testng.Assert.failNotEquals(Assert.java:776)
   org.testng.Assert.assertTrue(Assert.java:44)
   org.testng.Assert.assertTrue(Assert.java:54)
-  com.webtest.SystemSetting.demo.commange_test.uninstall_test(commange_test.java:31)
+  com.webtest.SystemSetting.demo.Commange_test.uninstall_test(Commange_test.java:31)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)

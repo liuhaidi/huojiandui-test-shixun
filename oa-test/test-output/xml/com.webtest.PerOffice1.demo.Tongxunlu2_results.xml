@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PerOffice1"
+<testsuite name="PerOffice1-liuhaidi"
            tests="1"
            failures="1"
            errors="0"
            skipped="0"
-           time="16.511">
+           time="16.629">
   <properties />
-            <testcase name="tongxunlu2" time="16.511" classname="com.webtest.PerOffice1.demo.Tongxunlu2">
+            <testcase name="tongxunlu2" time="16.629" classname="com.webtest.PerOffice1.demo.Tongxunlu2">
                 <failure type="java.lang.AssertionError"
                   message="expected [true] but found [false]"
               >

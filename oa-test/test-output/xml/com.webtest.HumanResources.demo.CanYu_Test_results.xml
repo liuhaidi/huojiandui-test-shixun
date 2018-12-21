@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HumanResources-yujunwei"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="16.901">
+  <properties />
+  
+  
+            <testcase name="CanYu_Test" time="16.901" classname="com.webtest.HumanResources.demo.CanYu_Test" />
+      
+</testsuite>

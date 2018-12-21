@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="office"
+<testsuite name="office-liuchen"
            tests="3"
            failures="1"
            errors="0"
            skipped="0"
-           time="19.692">
+           time="19.917">
   <properties />
-            <testcase name="add3" time="6.568" classname="com.webtest.office.demo.AddMeeting_Test">
+            <testcase name="add3" time="6.598" classname="com.webtest.office.demo.AddMeeting_Test">
                 <failure type="java.lang.AssertionError"
                   message="expected [true] but found [false]"
               >
@@ -47,7 +47,7 @@
           </testcase>
   
   
-            <testcase name="add1" time="6.553" classname="com.webtest.office.demo.AddMeeting_Test" />
-                <testcase name="add2" time="6.571" classname="com.webtest.office.demo.AddMeeting_Test" />
+            <testcase name="add2" time="6.636" classname="com.webtest.office.demo.AddMeeting_Test" />
+                <testcase name="add1" time="6.683" classname="com.webtest.office.demo.AddMeeting_Test" />
       
 </testsuite>

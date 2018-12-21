@@ -1,4 +1,4 @@
-package com.webtest.demo;
+package com.webtest.Knowledge.demo;
 
 import static org.testng.Assert.assertTrue;
 
@@ -19,11 +19,5 @@ public class DeleteKnowLedge extends BaseTest{
 		action.deletekn();
 //		assertTrue(webtest.ifContains("知识信息删除成功"));
 	}
-	@Test(priority=1)
-	public void Deletekn2() throws Exception  {
-		Action action =new Action(webtest) ;
-		action.login("admin", "123456");
-		action.deletekn2();
-//		assertTrue(webtest.ifContains("请至少选中一条帖子"));
-	}
+	
 }

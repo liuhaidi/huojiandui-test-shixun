@@ -16,13 +16,12 @@ public class Data_test extends BaseTest{
 	@BeforeMethod
 	public void setup() throws IOException {
 		action=new Data_Action(webtest);
-		action.login("admin", "admin123");
+		action.login("admin", "123456");
 	}
 	@Test
 	public void select_test() {
 		action.select("admin");
 		assertTrue(webtest.ifContains("admin"));
-		webtest.leaveFrame();
 	}
 	
 	

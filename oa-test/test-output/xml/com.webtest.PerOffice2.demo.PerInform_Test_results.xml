@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PerOffice2"
+<testsuite name="PerOffice2-songxiaojiao"
            tests="4"
            failures="1"
            errors="0"
            skipped="0"
-           time="47.027">
+           time="47.009">
   <properties />
-            <testcase name="test2" time="8.900" classname="com.webtest.PerOffice2.demo.PerInform_Test">
+            <testcase name="test2" time="8.857" classname="com.webtest.PerOffice2.demo.PerInform_Test">
                 <failure type="java.lang.AssertionError"
                   message="expected [true] but found [false]"
               >
@@ -47,8 +47,8 @@
           </testcase>
   
   
-            <testcase name="test3" time="13.891" classname="com.webtest.PerOffice2.demo.PerInform_Test" />
-                <testcase name="test4" time="13.896" classname="com.webtest.PerOffice2.demo.PerInform_Test" />
-                <testcase name="test1" time="10.340" classname="com.webtest.PerOffice2.demo.PerInform_Test" />
+            <testcase name="test3" time="13.948" classname="com.webtest.PerOffice2.demo.PerInform_Test" />
+                <testcase name="test1" time="10.315" classname="com.webtest.PerOffice2.demo.PerInform_Test" />
+                <testcase name="test4" time="13.889" classname="com.webtest.PerOffice2.demo.PerInform_Test" />
       
 </testsuite>
