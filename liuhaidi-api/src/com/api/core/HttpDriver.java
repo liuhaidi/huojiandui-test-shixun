@@ -79,7 +79,43 @@ public class HttpDriver {
 //		return message;
 
 	}
-	
+	public static String doGet(String url,CookieStore cookie) throws Exception {
+		RequestConfig gConfig = RequestConfig.custom().
+
+				setCookieSpec(CookieSpecs.STANDARD).build();
+
+			httpClient =HttpClients.custom().
+
+				setDefaultRequestConfig(gConfig).
+
+				setDefaultCookieStore(cookie).build();
+
+
+		HttpGet get = new HttpGet(url);
+
+		get.addHeader("Content-Type", "application/json");
+
+		respone = httpClient.execute(get);
+
+		HttpEntity entity = respone.getEntity();
+
+		String content = EntityUtils.toString(entity, "utf-8");
+
+		EntityUtils.consume(entity);
+
+		respone.close();
+
+		httpClient.close();
+		
+		return content;
+
+//        JSONObject json =JSONObject.fromObject(content);
+//		
+//		String message=json.getString("message");
+//		
+//		return message;
+
+	}
 
 	public static String doGet(String url,JSONObject data) throws Exception {
 
