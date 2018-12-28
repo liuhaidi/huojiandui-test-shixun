@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="office"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="6"
+           time="0.000">
+  <properties />
+  
+            <testcase name="setup" time="0.0" classname="com.webtest.office.demo.DeleteTest">
+          <skipped />
+    </testcase>
+            <testcase name="doAfterMethod" time="0.0" classname="com.webtest.office.demo.DeleteTest">
+          <skipped />
+    </testcase>
+            <testcase name="setup" time="0.0" classname="com.webtest.office.demo.DeleteTest">
+          <skipped />
+    </testcase>
+            <testcase name="doBeforeSuite" time="0.0" classname="com.webtest.office.demo.DeleteTest">
+          <skipped />
+    </testcase>
+            <testcase name="delete1" time="0.0" classname="com.webtest.office.demo.DeleteTest">
+          <skipped />
+    </testcase>
+            <testcase name="delete2" time="0.0" classname="com.webtest.office.demo.DeleteTest">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SystemSetting"
+           tests="10"
+           failures="0"
+           errors="0"
+           skipped="10"
+           time="0.000">
+  <properties />
+  
+            <testcase name="doBeforeSuite" time="0.0" classname="com.webtest.SystemSetting.demo.Zhanghu_Test">
+          <skipped />
+    </testcase>
+            <testcase name="setup" time="0.0" classname="com.webtest.SystemSetting.demo.Zhanghu_Test">
+          <skipped />
+    </testcase>
+            <testcase name="setup" time="0.0" classname="com.webtest.SystemSetting.demo.Zhanghu_Test">
+          <skipped />
+    </testcase>
+            <testcase name="doAfterMethod" time="0.0" classname="com.webtest.SystemSetting.demo.Zhanghu_Test">
+          <skipped />
+    </testcase>
+            <testcase name="setup" time="0.0" classname="com.webtest.SystemSetting.demo.Zhanghu_Test">
+          <skipped />
+    </testcase>
+            <testcase name="setup" time="0.0" classname="com.webtest.SystemSetting.demo.Zhanghu_Test">
+          <skipped />
+    </testcase>
+            <testcase name="add_test_fail" time="0.0" classname="com.webtest.SystemSetting.demo.Zhanghu_Test">
+          <skipped />
+    </testcase>
+            <testcase name="add_test_succeess" time="0.0" classname="com.webtest.SystemSetting.demo.Zhanghu_Test">
+          <skipped />
+    </testcase>
+            <testcase name="intMessage_test" time="0.0" classname="com.webtest.SystemSetting.demo.Zhanghu_Test">
+          <skipped />
+    </testcase>
+            <testcase name="select_test" time="0.0" classname="com.webtest.SystemSetting.demo.Zhanghu_Test">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

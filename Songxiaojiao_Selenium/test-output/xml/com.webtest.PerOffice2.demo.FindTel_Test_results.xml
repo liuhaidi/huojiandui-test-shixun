@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PerOffice2"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="17.781">
+  <properties />
+  
+  
+            <testcase name="test_findbykey" time="17.781" classname="com.webtest.PerOffice2.demo.FindTel_Test" />
+      
+</testsuite>

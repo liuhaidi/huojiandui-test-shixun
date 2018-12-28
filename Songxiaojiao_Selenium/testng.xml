@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="s2">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+        <listener class-name="com.webtest.core.WebTestListener"></listener>
+    </listeners>
+	
+	<tests name="PerOffice2">
+	    <classes>
+	        <class name="com.webtest.PerOffice2.demo.AddReadTime_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.Comment_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.DelPerLog_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.FindInform_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.FindTel_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.MassMessage_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.NewLog_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.NewTel_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.PerInform_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.PerPwd_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.ReadShortMsg_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.TelMessage_Test"></class>
+	        <class name="com.webtest.PerOffice2.demo.WordLimit_Test"></class>
+	    </classes>
+	</tests>
+
+</suite>

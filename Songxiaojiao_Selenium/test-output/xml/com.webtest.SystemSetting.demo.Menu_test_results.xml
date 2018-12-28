@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SystemSetting"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="4"
+           time="0.000">
+  <properties />
+  
+            <testcase name="doAfterMethod" time="0.0" classname="com.webtest.SystemSetting.demo.Menu_test">
+          <skipped />
+    </testcase>
+            <testcase name="setup" time="0.0" classname="com.webtest.SystemSetting.demo.Menu_test">
+          <skipped />
+    </testcase>
+            <testcase name="doBeforeSuite" time="0.0" classname="com.webtest.SystemSetting.demo.Menu_test">
+          <skipped />
+    </testcase>
+            <testcase name="add_menu_test" time="0.0" classname="com.webtest.SystemSetting.demo.Menu_test">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test1"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="10.515">
+  <properties />
+  
+  
+            <testcase name="testJavaMail" time="10.515" classname="com.api.test.JavaMail_Test" />
+      
+</testsuite>

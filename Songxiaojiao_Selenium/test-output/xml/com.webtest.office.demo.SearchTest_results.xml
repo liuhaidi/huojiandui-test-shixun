@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="office"
+           tests="8"
+           failures="0"
+           errors="0"
+           skipped="8"
+           time="0.000">
+  <properties />
+  
+            <testcase name="doAfterMethod" time="0.0" classname="com.webtest.office.demo.SearchTest">
+          <skipped />
+    </testcase>
+            <testcase name="setup" time="0.0" classname="com.webtest.office.demo.SearchTest">
+          <skipped />
+    </testcase>
+            <testcase name="doBeforeSuite" time="0.0" classname="com.webtest.office.demo.SearchTest">
+          <skipped />
+    </testcase>
+            <testcase name="setup" time="0.0" classname="com.webtest.office.demo.SearchTest">
+          <skipped />
+    </testcase>
+            <testcase name="setup" time="0.0" classname="com.webtest.office.demo.SearchTest">
+          <skipped />
+    </testcase>
+            <testcase name="search1" time="0.0" classname="com.webtest.office.demo.SearchTest">
+          <skipped />
+    </testcase>
+            <testcase name="search3" time="0.0" classname="com.webtest.office.demo.SearchTest">
+          <skipped />
+    </testcase>
+            <testcase name="search2" time="0.0" classname="com.webtest.office.demo.SearchTest">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

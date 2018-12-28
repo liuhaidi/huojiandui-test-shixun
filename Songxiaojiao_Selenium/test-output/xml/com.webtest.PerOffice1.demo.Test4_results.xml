@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PerOffice1"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="34.525">
+  <properties />
+  
+  
+            <testcase name="beizhu1" time="34.525" classname="com.webtest.PerOffice1.demo.Test4" />
+      
+</testsuite>
