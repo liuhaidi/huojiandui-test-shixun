@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Knowledge-qinyinuo"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="22.273">
+  <properties />
+  
+  
+            <testcase name="Deletefile" time="11.212" classname="com.webtest.Knowledge.demo.Deletefilee" />
+                <testcase name="Deletefile2" time="11.061" classname="com.webtest.Knowledge.demo.Deletefilee" />
+      
+</testsuite>

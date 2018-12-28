@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SystemSetting-wanghaoxin"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="12.640">
+  <properties />
+  
+  
+            <testcase name="qingkong_test" time="12.640" classname="com.webtest.SystemSetting.demo.Product_test1" />
+      
+</testsuite>

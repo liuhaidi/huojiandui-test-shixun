@@ -1,0 +1,135 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="s2">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+        <listener class-name="com.webtest.core.WebTestListener"></listener>
+    </listeners>
+	
+	<test name="PerOffice1-liuhaidi">
+		<classes>
+		    <class name="com.webtest.PerOffice1.demo.Beizhu3"></class>
+		    <class name="com.webtest.PerOffice1.demo.Daka1"></class>
+            <class name="com.webtest.PerOffice1.demo.Daka2"></class>
+            <class name="com.webtest.PerOffice1.demo.Daka6"></class>
+            <class name="com.webtest.PerOffice1.demo.Beizhu1"></class>
+            <class name="com.webtest.PerOffice1.demo.Beizhu2"></class>
+            <class name="com.webtest.PerOffice1.demo.Beizhu4"></class>
+            <class name="com.webtest.PerOffice1.demo.Duanxin1"></class>
+            <class name="com.webtest.PerOffice1.demo.Tongxunlu1"></class>
+            <class name="com.webtest.PerOffice1.demo.Tongxunlu2"></class>
+            <class name="com.webtest.PerOffice1.demo.Tongxunlu3"></class>
+            <class name="com.webtest.PerOffice1.demo.Huiyi1"></class>
+            <class name="com.webtest.PerOffice1.demo.Huiyi2"></class>
+            <class name="com.webtest.PerOffice1.demo.Huiyi3"></class>
+            <class name="com.webtest.PerOffice1.demo.Huiyi4"></class>
+            <class name="com.webtest.PerOffice1.demo.Huiyi5"></class>
+            <class name="com.webtest.PerOffice1.demo.Jihua1"></class>
+            <class name="com.webtest.PerOffice1.demo.Jihua2"></class>
+            <class name="com.webtest.PerOffice1.demo.Jihua3"></class>
+            <class name="com.webtest.PerOffice1.demo.Jihua4"></class>
+            <class name="com.webtest.PerOffice1.demo.Xinjianrenwu1"></class>
+            <class name="com.webtest.PerOffice1.demo.Xinjianrenwu3"></class>
+            <class name="com.webtest.PerOffice1.demo.Xinjianrenwu4"></class>
+            <class name="com.webtest.PerOffice1.demo.Xinjianrenwu5"></class>
+            <class name="com.webtest.PerOffice1.demo.Xinjianrenwu6"></class>
+            <class name="com.webtest.PerOffice1.demo.Xinjianrenwu7"></class>
+            <class name="com.webtest.PerOffice1.demo.Xinjianrenwu8"></class>
+            <class name="com.webtest.PerOffice1.demo.Xinjianrenwu9"></class>
+            <class name="com.webtest.PerOffice1.demo.Xinjianrenwu10"></class>
+            <class name="com.webtest.PerOffice1.demo.Xinjianrenwu11"></class>
+            <class name="com.webtest.PerOffice1.demo.Jindu1"></class>
+            <class name="com.webtest.PerOffice1.demo.Jindu3"></class>
+            <class name="com.webtest.PerOffice1.demo.Jindu4"></class>
+            <class name="com.webtest.PerOffice1.demo.Jindu5"></class>  
+            <class name="com.webtest.PerOffice1.demo.Chakanrenwu4"></class>
+            <class name="com.webtest.PerOffice1.demo.Zhixingren"></class>
+            <class name="com.webtest.PerOffice1.demo.Qingchu"></class>
+        </classes>
+	</test>
+	<test name="PerOffice2-songxiaojiao">
+		<classes>
+		    <class name="com.webtest.PerOffice2.demo.AddReadTime_Test"></class>
+		    <class name="com.webtest.PerOffice2.demo.Comment_Test"></class>
+		    <class name="com.webtest.PerOffice2.demo.DelPerLog_Test"></class>
+		    <class name="com.webtest.PerOffice2.demo.FindInform_Test"></class>
+		    <class name="com.webtest.PerOffice2.demo.FindTel_Test"></class>
+		    <class name="com.webtest.PerOffice2.demo.MassMessage_Test"></class>
+		    <class name="com.webtest.PerOffice2.demo.NewTel_Test"></class>
+		    <class name="com.webtest.PerOffice2.demo.NewLog_Test"></class>
+		    <class name="com.webtest.PerOffice2.demo.PerInform_Test"></class>
+		    <class name="com.webtest.PerOffice2.demo.PerPwd_Test"></class>
+		    <class name="com.webtest.PerOffice2.demo.ReadShortMsg_Test"></class>
+		    <class name="com.webtest.PerOffice2.demo.TelMessage_Test"></class>
+		    <class name="com.webtest.PerOffice2.demo.WordLimit_Test"></class>
+        </classes>
+	</test>
+	
+	<test name="Knowledge-qinyinuo">
+		<classes>
+		    <class name="com.webtest.Knowledge.demo.AddForum"></class>
+		    <class name="com.webtest.Knowledge.demo.Deletefilee"></class>
+		    <class name="com.webtest.Knowledge.demo.DeleteKnowLedge"></class>
+		    <class name="com.webtest.Knowledge.demo.Front_Login_Test"></class>
+		    <class name="com.webtest.Knowledge.demo.Front_Test"></class>
+		    <class name="com.webtest.Knowledge.demo.KnowLedgeEnter"></class>
+		    <class name="com.webtest.Knowledge.demo.SearchFile"></class>
+		    <class name="com.webtest.Knowledge.demo.SearchKnowLegde"></class>
+		    <class name="com.webtest.Knowledge.demo.SendMessage"></class>
+		    <class name="com.webtest.Knowledge.demo.SendPost"></class>
+		   
+        </classes>
+	</test>
+	<test name="HumanResources-yujunwei">
+		<classes>
+		    <class name="com.webtest.HumanResources.demo.BianHaoChaXun_Test"></class>
+		    <class name="com.webtest.HumanResources.demo.CaiDanTongBu_Test"></class>
+		    <class name="com.webtest.HumanResources.demo.CanYu_Test"></class>
+		    <class name="com.webtest.HumanResources.demo.DaoChu_Test"></class>
+		    <class name="com.webtest.HumanResources.demo.FaBu_Test"></class>
+		    <class name="com.webtest.HumanResources.demo.FaBuJiangCheng_Test"></class>
+		    <class name="com.webtest.HumanResources.demo.HengChaiDan_Test"></class>
+		    <class name="com.webtest.HumanResources.demo.JiLu_Test"></class>
+		    <class name="com.webtest.HumanResources.demo.LeiXingChaXun_Test"></class>
+		    <class name="com.webtest.HumanResources.demo.QuanXuanShanChu_Test"></class>
+		    <class name="com.webtest.HumanResources.demo.ShanChuMore_Test"></class>
+		    <class name="com.webtest.HumanResources.demo.ShanChuOne_Test"></class>
+		    <class name="com.webtest.HumanResources.demo.Time_Test"></class>
+		    <class name="com.webtest.HumanResources.demo.XinJianHeTong_Test"></class>
+		    <class name="com.webtest.HumanResources.demo.XueLiShanChu"></class>
+		    <class name="com.webtest.HumanResources.demo.ZhouQi_Test"></class>
+		    <class name="com.webtest.HumanResources.demo.BianHaoChaXun_Test"></class>
+        </classes>
+	</test>
+	<test name="office-liuchen">
+		<classes>
+		    <class name="com.webtest.office.demo.AddMeeting_Test"></class>
+		    <class name="com.webtest.office.demo.DeleteTest"></class>
+		    <class name="com.webtest.office.demo.SearchTest"></class>
+		    <class name="com.webtest.office.demo.VoteTest1"></class>
+		    <class name="com.webtest.office.demo.VoteTest2"></class>
+		    <class name="com.webtest.office.demo.VoteTest3"></class>
+        </classes>
+	</test>
+	<test name="SystemSetting-wanghaoxin">
+		<classes>
+		    <class name="com.webtest.SystemSetting.demo.Commange_test"></class>
+		    <class name="com.webtest.SystemSetting.demo.Data_test"></class>
+		    <class name="com.webtest.SystemSetting.demo.Datacopy_test"></class>
+		    <class name="com.webtest.SystemSetting.demo.Menu_test"></class>
+		    <class name="com.webtest.SystemSetting.demo.Partment_Action_Test"></class>
+		    <class name="com.webtest.SystemSetting.demo.Product_test"></class>
+		    <class name="com.webtest.SystemSetting.demo.Product_test1"></class>
+		    <class name="com.webtest.SystemSetting.demo.Product_test2"></class>
+		    <class name="com.webtest.SystemSetting.demo.QuanXianSet_test"></class>
+		    <class name="com.webtest.SystemSetting.demo.SetMessage_test"></class>
+		    <class name="com.webtest.SystemSetting.demo.Workposition_test"></class>
+		    <class name="com.webtest.SystemSetting.demo.Zhanghu_Test"></class>
+		    <class name="com.webtest.SystemSetting.demo.Zhanghu_Test1"></class>
+		    <class name="com.webtest.SystemSetting.demo.Zhanghu_Test2"></class>
+		    <class name="com.webtest.SystemSetting.demo.Zhanghu_Test3"></class>
+        </classes>
+	</test>
+
+</suite>

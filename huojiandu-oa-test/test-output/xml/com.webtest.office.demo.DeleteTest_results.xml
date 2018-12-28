@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="office-liuchen"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="14.311">
+  <properties />
+  
+  
+            <testcase name="delete1" time="6.529" classname="com.webtest.office.demo.DeleteTest" />
+                <testcase name="delete2" time="7.782" classname="com.webtest.office.demo.DeleteTest" />
+      
+</testsuite>

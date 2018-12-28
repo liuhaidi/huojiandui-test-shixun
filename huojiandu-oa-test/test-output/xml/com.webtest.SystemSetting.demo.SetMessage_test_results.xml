@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SystemSetting-wanghaoxin"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="6.154">
+  <properties />
+  
+  
+            <testcase name="Set" time="6.154" classname="com.webtest.SystemSetting.demo.SetMessage_test" />
+      
+</testsuite>

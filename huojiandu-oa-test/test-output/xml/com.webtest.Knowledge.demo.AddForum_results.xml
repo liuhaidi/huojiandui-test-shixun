@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Knowledge-qinyinuo"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="24.702">
+  <properties />
+  
+  
+            <testcase name="Forum2" time="11.155" classname="com.webtest.Knowledge.demo.AddForum" />
+                <testcase name="Forum" time="13.547" classname="com.webtest.Knowledge.demo.AddForum" />
+      
+</testsuite>

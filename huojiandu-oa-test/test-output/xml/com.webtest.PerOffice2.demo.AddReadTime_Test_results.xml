@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PerOffice2-songxiaojiao"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="13.718">
+  <properties />
+  
+  
+            <testcase name="testReadTime" time="13.718" classname="com.webtest.PerOffice2.demo.AddReadTime_Test" />
+      
+</testsuite>
