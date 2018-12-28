@@ -16,3 +16,6 @@ https://github.com/1345678/LZY.git
 
 火箭队总地址：
 https://github.com/liuhaidi/huojiandui-test-shixun
+
+说明：个人地址交付内容为测试报告，测试用例，测试计划，及第一阶段selenium和第三阶段接口框架
+总地址交付内容为第二阶段自动化单元测试内容，商城接口测试用例，以及测试周记
